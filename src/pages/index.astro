@@ -1,11 +1,18 @@
 ---
 import Header from '../components/Header.tsx';
+import { links } from '../data';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Portfolio">
     <Header client:load />
-    <main class="h-[10000px]">
-       
+    <main class="h-fit">
+        {
+            links.map((link) => (
+                <section class="h-[50rem] scroll-mt-40" id={link}>
+                    <h1>{link}</h1>
+                </section>
+            ))
+        }
     </main>
 </Layout>
