@@ -1,6 +1,6 @@
+import { useActiveSection } from '@hooks/useActiveSection';
+import { links } from '@utils/data';
 import { motion } from 'framer-motion';
-import { links } from '../data';
-import { useActiveSection } from '../hooks/useActiveSection';
 
 const Header = () => {
     const { activeSection, setClickedSection } = useActiveSection();
@@ -13,7 +13,7 @@ const Header = () => {
                 animate={{ opacity: 1, y: -0 }}
             >
                 <nav className="relative w-full h-full p-2 flex">
-                    <ul className="relative w-full h-full flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+                    <ul className="relative w-full h-full flex flex-wrap items-center justify-center gap-2 gap-x-4">
                         {links.map((link) => (
                             <li className="flex items-center justify-center relative" key={link}>
                                 <a
@@ -27,7 +27,7 @@ const Header = () => {
 
                                     {link === activeSection && (
                                         <motion.span
-                                            className="absolute inset-0 -z-10 rounded-full bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 !border-opacity-60"
+                                            className="absolute inset-0 -z-10 rounded-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 !border-opacity-60"
                                             layoutId="activeSection"
                                             transition={{
                                                 type: 'spring',

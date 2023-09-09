@@ -1,6 +1,6 @@
+import { useAutoResetState } from '@hooks/useAutoResetState';
+import { links, type LinkId } from '@utils/data';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { links, type LinkId } from '../data';
-import { useAutoResetState } from './useAutoResetState';
 
 export const useActiveSection = () => {
     const [activeSections, setActiveSections] = useState(links.map((_, i) => i === 0));

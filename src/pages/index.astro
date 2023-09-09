@@ -1,18 +1,23 @@
 ---
-import Header from '../components/Header.tsx';
-import { links } from '../data';
-import Layout from '../layouts/Layout.astro';
+import Apps from '@components/Apps.astro';
+import Divider from '@components/Divider';
+import Experience from '@components/Experience.astro';
+import Games from '@components/Games.astro';
+import Header from '@components/Header';
+import Home from '@components/Home.astro';
+import Skills from '@components/Skills.astro';
+import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title="Portfolio">
     <Header client:load />
-    <main class="h-fit">
-        {
-            links.map((link) => (
-                <section class="h-[50rem] scroll-mt-40" id={link}>
-                    <h1>{link}</h1>
-                </section>
-            ))
-        }
+
+    <main class="relative w-full h-fit flex flex-col items-center">
+        <Home />
+        <Divider client:load />
+        <Apps />
+        <Games />
+        <Skills />
+        <Experience />
     </main>
 </Layout>

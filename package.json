@@ -16,6 +16,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^3.0.12",
+    "astro-google-fonts-optimizer": "^0.2.2",
     "astrojs-service-worker": "^1.1.0",
     "framer-motion": "^10.16.4",
     "react": "^18.0.0",

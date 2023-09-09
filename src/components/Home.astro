@@ -1,0 +1,26 @@
+---
+import Section from '@layouts/Section.astro';
+import { Image } from 'astro:assets';
+---
+
+<Section link="Home">
+    <div class="relative w-full h-fit mt-36 sm:mt-32 flex flex-col items-center gap-8 md:gap-16">
+        <Image
+            src="/Profile.webp"
+            alt="404"
+            width={256}
+            height={256}
+            class="w-72 h-72 md:w-96 md:h-96 rounded-full shadow-lg dark:border dark:border-gray-800 dark:!border-opacity-30"
+        />
+
+        <h1 class="font-bold text-5xl md:text-6xl text-center">
+            Hi! I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-rose-400"
+                >Carles Rojas</span
+            >
+        </h1>
+
+        <p class="text-2xl text-center lg:max-w-[65%] text-balance opacity-70">
+            Full stack Software Engineer & Designer from Barcelona with +5 years of experience
+        </p>
+    </div>
+</Section>
