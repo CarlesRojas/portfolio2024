@@ -13,4 +13,4 @@ export const useAutoResetState = (initialValue: any, duration: number) => {
     }, [duration, initialValue, internalState]);
 
     return [internalState, setInternalState];
-}
+};

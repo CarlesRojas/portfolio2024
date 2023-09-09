@@ -1,6 +1,6 @@
-import { links, type LinkId } from "../data";
-import { useState, useEffect, useRef, useMemo } from "react";
-import { useAutoResetState } from "./useAutoResetState";
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { links, type LinkId } from '../data';
+import { useAutoResetState } from './useAutoResetState';
 
 export const useActiveSection = () => {
     const [activeSections, setActiveSections] = useState(links.map((_, i) => i === 0));
@@ -22,7 +22,7 @@ export const useActiveSection = () => {
 
     useEffect(() => {
         observer.current = new IntersectionObserver(onIntersectionChange, {
-            rootMargin: "0px",
+            rootMargin: '0px',
             threshold: 0.5,
         });
 
