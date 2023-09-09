@@ -1,10 +1,13 @@
+import react from "@astrojs/react";
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
 import serviceWorker from 'astrojs-service-worker';
 
-import react from "@astrojs/react";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [serviceWorker(), tailwind(), react()]
+  integrations: [serviceWorker(), tailwind(), react()],
+  output: "static",
+  adapter: vercel()
 });
