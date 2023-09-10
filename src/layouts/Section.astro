@@ -9,7 +9,7 @@ interface Props {
 const { title, link } = Astro.props;
 ---
 
-<section class="flex flex-col w-11/12 max-w-7xl items-center gap-8 py-16 scroll-mt-36 sm:scroll-mt-24" id={link}>
+<section class="flex flex-col w-11/12 max-w-7xl items-center gap-8 py-16 scroll-mt-28 sm:scroll-mt-12" id={link}>
     {title && <h2 class="font-medium text-2xl sm:text-3xl">{title}</h2>}
     <slot />
 </section>
