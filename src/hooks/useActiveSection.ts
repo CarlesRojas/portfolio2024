@@ -23,7 +23,7 @@ export const useActiveSection = () => {
     useEffect(() => {
         observer.current = new IntersectionObserver(onIntersectionChange, {
             rootMargin: '0px',
-            threshold: 0.5,
+            threshold: 0.3,
         });
 
         links.forEach((link) => {
@@ -32,11 +32,9 @@ export const useActiveSection = () => {
         });
     }, []);
 
-    const isLastLinkActive = activeSections[activeSections.length - 1] ? links[activeSections.length - 1] : null;
-
     const activeSection = useMemo(
-        () => clickedSection ?? isLastLinkActive ?? links[activeSections.findIndex((active) => active)],
-        [clickedSection, isLastLinkActive, activeSections]
+        () => clickedSection ?? links[activeSections.findIndex((active) => active)] ?? links[links.length - 1],
+        [clickedSection, activeSections]
     );
 
     return { activeSection, setClickedSection };
