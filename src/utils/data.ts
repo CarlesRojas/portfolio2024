@@ -1,13 +1,13 @@
 export const links = ['Home', 'Apps', 'Games', 'Skills', 'Experience'] as const;
 export type LinkId = (typeof links)[number];
 
-export type HomeAction = {
+type ContactAction = {
     link: string;
     icon: string;
     label: string;
     title?: string;
 };
-export const homeActions: HomeAction[] = [
+export const contactActions: ContactAction[] = [
     {
         link: 'https://www.linkedin.com/in/carles-rojas/',
         label: 'Visit my LinkedIn profile',
