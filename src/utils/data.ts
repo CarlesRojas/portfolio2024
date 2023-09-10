@@ -54,7 +54,7 @@ export interface Project {
     date: Date;
 }
 
-export const MEDIA_URL = '/asset'; // 'https://portfoliomedia.s3.eu-west-1.amazonaws.com';
+export const MEDIA_URL = '/asset';
 
 export interface Experience {
     title: string;
