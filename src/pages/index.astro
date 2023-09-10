@@ -1,6 +1,5 @@
 ---
 import Apps from '@components/Apps.astro';
-import Divider from '@components/Divider';
 import Experience from '@components/Experience.astro';
 import Games from '@components/Games.astro';
 import Header from '@components/Header';
@@ -14,7 +13,7 @@ import Layout from '@layouts/Layout.astro';
 
     <main class="relative w-full h-fit flex flex-col items-center">
         <Home />
-        <Divider client:load />
+        <div class="bg-gray-200 my-16 h-16 w-1 rounded-full hidden sm:block dark:bg-opacity-20"></div>
         <Apps />
         <Games />
         <Skills />
