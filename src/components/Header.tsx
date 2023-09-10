@@ -16,12 +16,15 @@ const Header = () => {
                     <ul className="relative w-full h-full flex flex-wrap items-center justify-center gap-2 gap-x-4">
                         {links.map(({ name, hash }) => (
                             <li className="flex items-center justify-center relative" key={hash}>
-                                <a
+                                <button
                                     className={`flex items-center justify-center font-medium px-4 py-3 text-gray-500 outline-none hover:text-gray-950 focus:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 ${
                                         hash === activeSection.hash ? '!text-gray-950 dark:!text-gray-200' : ''
                                     }`}
-                                    href={`#${hash}`}
-                                    onClick={() => setClickedSection({ name, hash })}
+                                    onClick={() => {
+                                        const element = document.getElementById(hash);
+                                        if (element) element.scrollIntoView({ behavior: 'smooth' });
+                                        setClickedSection({ name, hash });
+                                    }}
                                 >
                                     {name}
 
@@ -36,7 +39,7 @@ const Header = () => {
                                             }}
                                         ></motion.span>
                                     )}
-                                </a>
+                                </button>
                             </li>
                         ))}
                     </ul>
