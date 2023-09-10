@@ -41,6 +41,7 @@ const Theme = () => {
         <button
             className="fixed z-40 bottom-6 right-6 p-4 w-14 h-14 rounded-full flex items-center justify-center outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-sm"
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light', true)}
+            aria-label="Toggle theme"
         >
             <SVG className="w-full h-full" src={`/asset/icon/${theme === 'light' ? 'Sun' : 'Moon'}.svg`} />
         </button>

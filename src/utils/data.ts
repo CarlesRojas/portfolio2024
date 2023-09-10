@@ -25,7 +25,7 @@ export const contactActions: ContactAction[] = [
     },
     {
         link: 'assets/CarlesRojas_SoftwareDeveloper_CV.pdf',
-        label: 'Download my Curriculum Vitae',
+        label: 'Download CV',
         icon: 'ri:file-download-fill',
         title: 'Download CV',
     },
