@@ -12,11 +12,19 @@ const sortedGames = games.map((project) => project.frontmatter as Project).sort(
     <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {
             sortedGames.map(({ route, title }, i) => (
-                <li class="relative group focus-within:scale-[1.04] hover:scale-[1.04] active:scale-[1.02] group transition">
+                <li class="relative group focus-within:scale-[1.04] hover:scale-[1.04] active:scale-[1.02] transition">
                     <a
                         href={`/project/${route}`}
-                        class="relative w-full h-fit outline-none group:focus:scale-[1.04] transition"
+                        class="relative w-full h-fit outline-none focus:scale-[1.04] transition"
                     >
+                        <Image
+                            src={`/assets/${route}/poster.webp`}
+                            alt={`${title} poster image`}
+                            width={640}
+                            height={360}
+                            class="opacity-0 group-hover:opacity-30 group-focus-within:opacity-30 transition blur-xl -z-10 absolute top-0  w-full h-full object-cover rounded-xl"
+                        />
+
                         <Image
                             src={`/assets/${route}/poster.webp`}
                             alt={`${title} poster image`}
