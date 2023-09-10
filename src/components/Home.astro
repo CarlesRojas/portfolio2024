@@ -1,6 +1,6 @@
 ---
 import Section from '@layouts/Section.astro';
-import { homeActions } from '@utils/data';
+import { MEDIA_URL, homeActions } from '@utils/data';
 import { Icon } from 'astro-icon';
 import { Image } from 'astro:assets';
 ---
@@ -8,7 +8,7 @@ import { Image } from 'astro:assets';
 <Section link="Home">
     <div class="relative w-full h-fit mt-28 sm:mt-20 flex flex-col items-center gap-8 lg:gap-12 2xl:gap-16">
         <Image
-            src="/assets/ProfileSmall.webp"
+            src={`${MEDIA_URL}/ProfileSmall.webp`}
             alt="404"
             width={256}
             height={256}

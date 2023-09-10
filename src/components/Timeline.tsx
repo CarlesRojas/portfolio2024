@@ -1,7 +1,5 @@
 import type { Experience } from '@utils/data';
-import { Fragment } from 'react';
 import SVG from 'react-inlinesvg';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 interface Props {
@@ -38,7 +36,7 @@ const Timeline = ({ experience }: Props) => {
 
                     <SVG
                         className="grid-in-icon w-16 h-16 p-4 rounded-full text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-sm"
-                        src={`/assets/icon/${icon}.svg`}
+                        src={`/asset/icon/${icon}.svg`}
                     />
 
                     <div className="hidden lg:flex grid-in-date w-full h-16 items-center justify-end group-even:justify-start">
@@ -47,41 +45,6 @@ const Timeline = ({ experience }: Props) => {
                 </div>
             ))}
         </div>
-    );
-};
-
-export const TimelineOld = ({ experience }: Props) => {
-    // console.log(experience);
-    return (
-        <VerticalTimeline lineColor="">
-            {experience.map(({ title, place, date, icon }, index) => (
-                <Fragment key={index}>
-                    <VerticalTimelineElement
-                        // contentStyle={{
-                        //     background: theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
-                        //     boxShadow: 'none',
-                        //     border: '1px solid rgba(0, 0, 0, 0.05)',
-                        //     textAlign: 'left',
-                        //     padding: '1.3rem 2rem',
-                        // }}
-                        // contentArrowStyle={{
-                        //     borderRight:
-                        //         theme === 'light' ? '0.4rem solid #9ca3af' : '0.4rem solid rgba(255, 255, 255, 0.5)',
-                        // }}
-                        date={date}
-                        icon={<SVG src={`/assets/icon/${icon}.svg`} className="w-6 h-6 color-white" />}
-                        // iconStyle={{
-                        //     background: theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
-                        //     fontSize: '1.5rem',
-                        // }}
-                    >
-                        <h3 className="font-semibold capitalize">{title}</h3>
-                        <p className="font-normal !mt-0">{place}</p>
-                        {/* <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p> */}
-                    </VerticalTimelineElement>
-                </Fragment>
-            ))}
-        </VerticalTimeline>
     );
 };
 
