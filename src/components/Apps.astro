@@ -18,7 +18,7 @@ const sortedApps = apps.map((project) => project.frontmatter as Project).sort(so
                         class="relative flex flex-col gap-2 items-center justify-center outline-none focus:scale-105 transition"
                     >
                         <Image
-                            src={`/assets/${route}/icon.webp`}
+                            src={`./src/assets/images/${route}/icon.webp`}
                             alt={`${title} icon`}
                             width={256}
                             height={256}
@@ -26,7 +26,7 @@ const sortedApps = apps.map((project) => project.frontmatter as Project).sort(so
                         />
 
                         <Image
-                            src={`/assets/${route}/icon.webp`}
+                            src={`./src/assets/images/${route}/icon.webp`}
                             alt={`${title} icon`}
                             width={256}
                             height={256}

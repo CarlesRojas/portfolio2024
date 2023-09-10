@@ -8,10 +8,11 @@ import { Image } from 'astro:assets';
 <Section link="Home">
     <div class="relative w-full h-fit mt-28 sm:mt-20 flex flex-col items-center gap-8 lg:gap-12 2xl:gap-16">
         <Image
-            src="/assets/ProfileSmall.webp"
+            src="./src/assets/images/ProfileSmall.webp"
             alt="404"
             width={256}
             height={256}
+            loading={'eager'}
             class="object-cover w-64 h-64 md:w-72 md:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 rounded-full shadow-lg dark:border dark:border-gray-800 dark:!border-opacity-30"
         />
 
