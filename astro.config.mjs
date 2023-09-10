@@ -10,4 +10,7 @@ export default defineConfig({
     integrations: [serviceWorker(), tailwind(), react()],
     output: 'server',
     adapter: vercel(),
+    image: {
+        // domains: ['astro.build'],
+    },
 });
