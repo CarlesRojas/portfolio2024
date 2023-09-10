@@ -17,7 +17,7 @@ const Header = () => {
                         {links.map((link) => (
                             <li className="flex items-center justify-center relative" key={link}>
                                 <a
-                                    className={`flex items-center justify-center font-medium px-4 py-3 text-gray-500 hover:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-200 ${
+                                    className={`flex items-center justify-center font-medium px-4 py-3 text-gray-500 outline-none hover:text-gray-950 focus:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 ${
                                         activeSection === link ? '!text-gray-950 dark:!text-gray-200' : ''
                                     }`}
                                     href={`#${link}`}

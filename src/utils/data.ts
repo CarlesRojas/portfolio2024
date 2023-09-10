@@ -25,3 +25,26 @@ export const homeActions: HomeAction[] = [
         icon: 'ri:mail-fill',
     },
 ];
+
+export enum LinkType {
+    GITHUB = 'github',
+    ANDROID = 'android',
+    WINDOWS = 'windows',
+    HOLOLENS = 'hololens',
+    ITCHIO = 'itchio',
+    PDF = 'pdf',
+}
+
+export interface Project {
+    route: string;
+    title: string;
+    subtitle: string;
+    description: string[];
+    links: { url: string; type: LinkType }[];
+    qr: string | false;
+    videoPosition: number;
+    video: boolean;
+    numberOfScreenshots: number;
+    process: string;
+    date: Date;
+}

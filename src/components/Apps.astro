@@ -1,7 +1,36 @@
 ---
 import Section from '@layouts/Section.astro';
+import type { Project } from '@utils/data';
+import { sortByDate } from '@utils/sortByDate';
+import { Image } from 'astro:assets';
+const apps = await Astro.glob(`../assets/app/*.md`);
+
+const sortedApps = apps.map((project) => project.frontmatter as Project).sort(sortByDate);
 ---
 
 <Section title="My Apps" link="Apps">
-    <div class="h-[50rem]"></div>
+    <ul class="flex flex-wrap gap-8 items-center justify-center">
+        {
+            sortedApps.map(({ route, title }, i) => (
+                <li class="relative w-fit group focus-within:scale-105 hover:scale-105 active:scale-[1.025] group transition">
+                    <a
+                        href={`/project/${route}`}
+                        class="relative w-fit flex flex-col gap-2 items-center justify-center outline-none group:focus:scale-105 transition"
+                    >
+                        <Image
+                            src={`/assets/${route}/icon.webp`}
+                            alt={`${title} poster image`}
+                            width={256}
+                            height={256}
+                            class="w-32 h-32 object-cover rounded-xl shadow-xl"
+                        />
+
+                        <p class="w-font-medium capitalize w-fill text-sm text-center text-balance opacity-80">
+                            {title}
+                        </p>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Section>

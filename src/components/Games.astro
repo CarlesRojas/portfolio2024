@@ -1,7 +1,32 @@
 ---
 import Section from '@layouts/Section.astro';
+import type { Project } from '@utils/data';
+import { sortByDate } from '@utils/sortByDate';
+import { Image } from 'astro:assets';
+const games = await Astro.glob(`../assets/game/*.md`);
+
+const sortedGames = games.map((project) => project.frontmatter as Project).sort(sortByDate);
 ---
 
 <Section title="My Games" link="Games">
-    <div class="h-[50rem]"></div>
+    <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {
+            sortedGames.map(({ route, title }, i) => (
+                <li class="relative group focus-within:scale-[1.04] hover:scale-[1.04] active:scale-[1.02] group transition">
+                    <a
+                        href={`/project/${route}`}
+                        class="relative w-full h-fit outline-none group:focus:scale-[1.04] transition"
+                    >
+                        <Image
+                            src={`/assets/${route}/poster.webp`}
+                            alt={`${title} poster image`}
+                            width={640}
+                            height={360}
+                            class="object-cover w-full h-full rounded-xl shadow-xl"
+                        />
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Section>
