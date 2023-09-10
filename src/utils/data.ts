@@ -4,25 +4,30 @@ export type LinkId = (typeof links)[number];
 export type HomeAction = {
     link: string;
     icon: string;
+    label: string;
     title?: string;
 };
 export const homeActions: HomeAction[] = [
     {
-        link: 'assets/CarlesRojas_SoftwareDeveloper_CV.pdf',
-        icon: 'ri:file-download-fill',
-        title: 'Download CV',
-    },
-    {
         link: 'https://www.linkedin.com/in/carles-rojas/',
+        label: 'Visit my LinkedIn profile',
         icon: 'ri:linkedin-fill',
     },
     {
         link: 'https://github.com/CarlesRojas',
+        label: 'Visit my GitHub profile',
         icon: 'ri:github-fill',
     },
     {
         link: 'mailto:email@carlesrojas.com',
+        label: 'Send me an email',
         icon: 'ri:mail-fill',
+    },
+    {
+        link: 'assets/CarlesRojas_SoftwareDeveloper_CV.pdf',
+        label: 'Download my Curriculum Vitae',
+        icon: 'ri:file-download-fill',
+        title: 'Download CV',
     },
 ];
 
@@ -47,4 +52,14 @@ export interface Project {
     numberOfScreenshots: number;
     process: string;
     date: Date;
+}
+
+export const MEDIA_URL = 'https://portfoliomedia.s3.eu-west-1.amazonaws.com';
+
+export interface Experience {
+    title: string;
+    place: string;
+    date: string;
+    icon: string;
+    description: string[];
 }

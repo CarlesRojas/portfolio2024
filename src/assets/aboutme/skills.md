@@ -1,11 +1,14 @@
 ---
 - NextJS
-- ReactJS
+- React
 - Typescript
 - Astro
+- Tailwind
+- Python
 - Django
 - Git
 - NodeJS
 - Prisma
-- Express
+- AWS
+- Kubernetes
 ---

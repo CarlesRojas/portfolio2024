@@ -8,8 +8,13 @@ module.exports = {
             sans: {
                 fontFamily: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
+            gridTemplateAreas: {
+                'timeline-mobile': ['icon job'],
+                timeline: ['date icon job'],
+                'timeline-inverted': ['job icon date'],
+            },
         },
     },
 
-    plugins: [],
+    plugins: [require('@savvywombat/tailwindcss-grid-areas')],
 };

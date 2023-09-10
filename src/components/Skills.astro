@@ -1,7 +1,10 @@
 ---
+import SkillList from '@components/SkillList';
 import Section from '@layouts/Section.astro';
+
+const skills: string[] = Object.values((await Astro.glob('../assets/aboutme/skills.md'))[0].frontmatter);
 ---
 
 <Section title="My Skills" link="Skills">
-    <div class="h-[50rem]"></div>
+    <SkillList skills={skills} client:load />
 </Section>
