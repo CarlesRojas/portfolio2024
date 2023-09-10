@@ -1,7 +1,6 @@
 import type { Experience } from '@utils/data';
 import { motion } from 'framer-motion';
 import SVG from 'react-inlinesvg';
-import 'react-vertical-timeline-component/style.min.css';
 
 interface Props {
     experience: Experience[];

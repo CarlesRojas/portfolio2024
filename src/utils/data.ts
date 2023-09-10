@@ -63,3 +63,8 @@ export interface Experience {
     icon: string;
     description: string[];
 }
+
+export interface Skill {
+    label: string;
+    icon?: string;
+}
