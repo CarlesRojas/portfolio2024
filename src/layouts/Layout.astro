@@ -40,10 +40,6 @@ const { title } = Astro.props;
 
         <script is:inline>
             const executPageScript = () => {
-                setTimeout(() => {
-                    document.documentElement.classList.add('smoothscroll');
-                }, 500);
-
                 const THEME_KEY = 'carles-rojas-portfolio_theme';
                 const localTheme = typeof window !== 'undefined' ? window.localStorage.getItem(THEME_KEY) : null;
 
