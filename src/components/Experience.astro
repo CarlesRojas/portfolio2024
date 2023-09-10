@@ -2,9 +2,9 @@
 import Section from '@layouts/Section.astro';
 import type { Experience } from '@utils/data';
 import Timeline from './Timeline';
-const experience: Experience[] = Object.values((await Astro.glob('../assets/aboutme/experience.md'))[0].frontmatter);
+const experience: Experience[] = Object.values((await Astro.glob('../asset/aboutme/experience.md'))[0].frontmatter);
 ---
 
-<Section title="My Experience" link="Experience">
+<Section title="My Experience" link="experience">
     <Timeline experience={experience} client:load />
 </Section>

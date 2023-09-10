@@ -3,20 +3,17 @@ import Section from '@layouts/Section.astro';
 import { MEDIA_URL, type Project } from '@utils/data';
 import { sortByDate } from '@utils/sortByDate';
 import { Image } from 'astro:assets';
-const games = await Astro.glob(`../assets/game/*.md`);
+const games = await Astro.glob(`../asset/game/*.md`);
 
 const sortedGames = games.map((project) => project.frontmatter as Project).sort(sortByDate);
 ---
 
-<Section title="My Games" link="Games">
+<Section title="My Games" link="games">
     <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {
             sortedGames.map(({ route, title }, i) => (
                 <li class="relative group focus-within:scale-[1.04] hover:scale-[1.04] active:scale-[1.02] transition">
-                    <a
-                        href={`/project/${route}`}
-                        class="relative w-full h-fit outline-none focus:scale-[1.04] transition"
-                    >
+                    <a href={`/game/${route}`} class="relative w-full h-fit outline-none focus:scale-[1.04] transition">
                         <Image
                             src={`${MEDIA_URL}/${route}/poster.webp`}
                             alt={`${title} poster image`}
@@ -31,6 +28,7 @@ const sortedGames = games.map((project) => project.frontmatter as Project).sort(
                             width={640}
                             height={360}
                             class="object-cover w-full h-full rounded-xl shadow-xl"
+                            transition:name={`game-${route}`}
                         />
                     </a>
                 </li>

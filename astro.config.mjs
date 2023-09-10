@@ -8,7 +8,7 @@ import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
     integrations: [serviceWorker(), tailwind(), react()],
-    output: 'server',
+    output: 'hybrid',
     adapter: vercel(),
     // image: {
     //     domains: ['portfoliomedia.s3.eu-west-1.amazonaws.com'],

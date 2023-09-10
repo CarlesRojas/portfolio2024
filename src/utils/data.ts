@@ -1,5 +1,12 @@
-export const links = ['Home', 'Apps', 'Games', 'Skills', 'Experience'] as const;
-export type LinkId = (typeof links)[number];
+export const links = [
+    { name: 'Home', hash: 'home' },
+    { name: 'Apps', hash: 'apps' },
+    { name: 'Games', hash: 'games' },
+    { name: 'Skills', hash: 'skills' },
+    { name: 'Experience', hash: 'experience' },
+] as const;
+
+export type LinkId = (typeof links)[number]['hash'];
 
 type ContactAction = {
     link: string;
@@ -24,7 +31,7 @@ export const contactActions: ContactAction[] = [
         icon: 'ri:mail-fill',
     },
     {
-        link: 'assets/CarlesRojas_SoftwareDeveloper_CV.pdf',
+        link: 'asset/CarlesRojas_SoftwareDeveloper_CV.pdf',
         label: 'Download CV',
         icon: 'ri:file-download-fill',
         title: 'Download CV',

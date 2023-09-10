@@ -8,7 +8,7 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "@assets/*": ["src/assets/*"],
+            "@asset/*": ["src/asset/*"],
             "@components/*": ["src/components/*"],
             "@hooks/*": ["src/hooks/*"],
             "@layouts/*": ["src/layouts/*"],

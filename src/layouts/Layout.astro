@@ -2,6 +2,8 @@
 import Footer from '@components/Footer.astro';
 import Theme from '@components/Theme';
 import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
     title: string;
 }
@@ -37,27 +39,29 @@ const { title } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
         <script is:inline>
-            setTimeout(() => {
-                document.documentElement.classList.add('smoothscroll');
-            }, 200);
-        </script>
+            const executPageScript = () => {
+                setTimeout(() => {
+                    document.documentElement.classList.add('smoothscroll');
+                }, 500);
 
-        <script is:inline>
-            const THEME_KEY = 'carles-rojas-portfolio_theme';
+                const THEME_KEY = 'carles-rojas-portfolio_theme';
+                const localTheme = typeof window !== 'undefined' ? window.localStorage.getItem(THEME_KEY) : null;
 
-            const localTheme = typeof window !== 'undefined' ? window.localStorage.getItem(THEME_KEY) : null;
+                const systemTheme =
+                    typeof window !== 'undefined'
+                        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+                            ? 'dark'
+                            : 'light'
+                        : null;
 
-            const systemTheme =
-                typeof window !== 'undefined'
-                    ? window.matchMedia('(prefers-color-scheme: dark)').matches
-                        ? 'dark'
-                        : 'light'
-                    : null;
+                const theme = localTheme || systemTheme || 'light';
 
-            const theme = localTheme || systemTheme || 'light';
+                if (theme === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            };
 
-            if (theme === 'dark') document.documentElement.classList.add('dark');
-            else document.documentElement.classList.remove('dark');
+            executPageScript();
+            document.addEventListener('astro:after-swap', executPageScript);
         </script>
 
         <GoogleFontsOptimizer
@@ -68,6 +72,8 @@ const { title } = Astro.props;
         <meta name="description" content="Carles Rojas - Full stack developer" />
 
         <title>{title}</title>
+
+        <ViewTransitions />
     </head>
 
     <body
@@ -91,7 +97,7 @@ const { title } = Astro.props;
 
         <Footer />
 
-        <Theme client:load />
+        <Theme client:load transition:persist />
 
         <div class="absolute bottom-0 left-0 w-screen h-screen pointer-events-none select-none -z-10">
             <div

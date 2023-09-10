@@ -1,5 +1,5 @@
 import { useAutoResetState } from '@hooks/useAutoResetState';
-import { links, type LinkId } from '@utils/data';
+import { links } from '@utils/data';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 export const useActiveSection = () => {
@@ -10,7 +10,7 @@ export const useActiveSection = () => {
 
     const onIntersectionChange = (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry) => {
-            const index = links.indexOf(entry.target.id as LinkId);
+            const index = links.findIndex(({ hash }) => entry.target.id === hash);
 
             setActiveSections((prev) => {
                 const next = [...prev];
@@ -26,8 +26,8 @@ export const useActiveSection = () => {
             threshold: 0.3,
         });
 
-        links.forEach((link) => {
-            const el = document.getElementById(link);
+        links.forEach(({ hash }) => {
+            const el = document.getElementById(hash);
             el && observer.current?.observe(el);
         });
     }, []);
