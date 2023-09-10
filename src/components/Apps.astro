@@ -22,7 +22,7 @@ const sortedApps = apps.map((project) => project.frontmatter as Project).sort(so
                             alt={`${title} icon`}
                             width={256}
                             height={256}
-                            class="opacity-0 group-hover:opacity-50 group-focus-within:opacity-50 transition blur-xl -z-10 absolute top-0 w-32 h-32 object-cover rounded-xl"
+                            class="opacity-0 group-hover:opacity-70 group-focus-within:opacity-70 dark:group-hover:opacity-50 dark:group-focus-within:opacity-50 transition blur-xl -z-10 absolute top-0 w-32 h-32 object-cover rounded-xl"
                         />
 
                         <Image
@@ -30,7 +30,7 @@ const sortedApps = apps.map((project) => project.frontmatter as Project).sort(so
                             alt={`${title} icon`}
                             width={256}
                             height={256}
-                            class="w-32 h-32 object-cover rounded-xl shadow-xl"
+                            class="w-32 h-32 object-cover rounded-[2rem] shadow-xl"
                         />
 
                         <p class="w-font-medium capitalize w-fill text-sm text-center text-balance opacity-80">
