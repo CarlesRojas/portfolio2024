@@ -15,15 +15,17 @@ const { title, screenshots, video, horizontal } = project;
     <ul class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center">
         {
             video && (
-                <video
-                    controls
-                    autoplay
-                    muted
-                    class={`${
-                        horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                    } max-w-full rounded-lg smrounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
-                    src={video}
-                />
+                <li class="relative">
+                    <video
+                        controls
+                        autoplay
+                        muted
+                        class={`${
+                            horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                        } max-w-full rounded-lg object-contain sm:rounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
+                        src={video}
+                    />
+                </li>
             )
         }
         {
@@ -32,7 +34,7 @@ const { title, screenshots, video, horizontal } = project;
                     <Image
                         class={`${
                             horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                        } max-w-full rounded-lg smrounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
+                        } max-w-full rounded-lg object-contain sm:rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
                         src={screenshot}
                         height={horizontal ? undefined : 512}
                         width={horizontal ? 512 : undefined}

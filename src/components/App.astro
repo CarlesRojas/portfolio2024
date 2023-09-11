@@ -21,6 +21,7 @@ const month = date.toLocaleString('default', { month: 'long' });
             alt={`${title} icon`}
             width={200}
             height={200}
+            loading="eager"
             class="w-48 h-48 object-cover rounded-[3rem] shadow-xl"
             transition:name={`app-${route}`}
         />
@@ -34,7 +35,7 @@ const month = date.toLocaleString('default', { month: 'long' });
                 {subtitle}
             </p>
 
-            <small class="text-base md:text-lg text-center text-balance opacity-40">
+            <small class="text-base md:text-lg text-center text-balance opacity-60">
                 {`${month} ${year}`}
             </small>
         </div>
