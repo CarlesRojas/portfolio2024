@@ -10,7 +10,4 @@ export default defineConfig({
     integrations: [serviceWorker(), tailwind(), react()],
     output: 'hybrid',
     adapter: vercel(),
-    // image: {
-    //     domains: ['portfoliomedia.s3.eu-west-1.amazonaws.com'],
-    // },
 });

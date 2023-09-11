@@ -14,6 +14,7 @@ type ContactAction = {
     label: string;
     title?: string;
 };
+
 export const contactActions: ContactAction[] = [
     {
         link: 'https://www.linkedin.com/in/carles-rojas/',
@@ -31,7 +32,7 @@ export const contactActions: ContactAction[] = [
         icon: 'ri:mail-fill',
     },
     {
-        link: 'asset/CarlesRojas_SoftwareDeveloper_CV.pdf',
+        link: 'https://portfoliomedia.s3.eu-west-1.amazonaws.com/CarlesRojas_SoftwareDeveloper_CV.pdf',
         label: 'Download CV',
         icon: 'ri:file-download-fill',
         title: 'Download CV',
