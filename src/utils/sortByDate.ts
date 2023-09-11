@@ -1,4 +1,4 @@
-import type { Project } from '@utils/data';
+import type { Project } from '@data/projects';
 
 export const sortByDate = (a: Project, b: Project) => {
     const dateA = new Date(a.date);

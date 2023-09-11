@@ -1,18 +1,19 @@
 ---
+import App from '@components/App.astro';
 import Back from '@components/Back.astro';
+import Description from '@components/Description.astro';
 import Links from '@components/Links.astro';
 import Screenshots from '@components/Screenshots.astro';
-import App from '../../components/App.astro';
-import Description from '../../components/Description.astro';
-import Layout from '../../layouts/Layout.astro';
+import { apps } from '@data/projects';
+import Layout from '@layouts/Layout.astro';
 
 export async function getStaticPaths() {
-    const apps = await Astro.glob(`../../asset/app/*.md`);
-
-    return apps.map((project) => ({
-        params: { route: project.frontmatter.route },
-        props: { project: project.frontmatter },
-    }));
+    return apps
+        .filter(({ disabled }) => !disabled)
+        .map((project) => ({
+            params: { route: project.route },
+            props: { project },
+        }));
 }
 
 const { project } = Astro.props;

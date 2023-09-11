@@ -16,4 +16,4 @@ export const skills: Skill[] = [
     { label: 'Prisma' },
     { label: 'AWS' },
     { label: 'Kubernetes' },
-];
+] as const;

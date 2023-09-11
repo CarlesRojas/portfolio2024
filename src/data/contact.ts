@@ -27,4 +27,4 @@ export const contactActions: ContactAction[] = [
         icon: 'ri:file-download-fill',
         title: 'Download CV',
     },
-];
+] as const;

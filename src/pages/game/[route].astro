@@ -4,7 +4,7 @@ import Description from '@components/Description.astro';
 import Game from '@components/Game.astro';
 import Links from '@components/Links.astro';
 import Screenshots from '@components/Screenshots.astro';
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@layouts/Layout.astro';
 
 export async function getStaticPaths() {
     const games = await Astro.glob(`../../asset/game/*.md`);
