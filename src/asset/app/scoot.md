@@ -9,8 +9,8 @@ description:
     ]
 links:
     [
-        { url: https://github.com/CarlesRojas/hackupc2022, type: github },
-        { url: https://github.com/JaumeBallester/hackupc2022-server, type: github },
+        { url: https://github.com/CarlesRojas/hackupc2022, icon: ri:github-fill },
+        { url: https://github.com/JaumeBallester/hackupc2022-server, icon: ri:github-fill },
     ]
 qr: https://scoot.pinya.app/
 videoPosition: 0

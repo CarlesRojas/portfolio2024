@@ -8,10 +8,10 @@ description:
     ]
 links:
     [
-        { url: https://play.google.com/store/apps/details?id=app.pinya.kubic, type: android },
-        { url: https://www.microsoft.com/store/apps/9NZLVCD128J4, type: windows },
-        { url: https://github.com/CarlesRojas/kubic-client, type: github },
-        { url: https://github.com/CarlesRojas/kubic-server, type: github },
+        { url: https://play.google.com/store/apps/details?id=app.pinya.kubic, icon: ri:android-fill },
+        { url: https://www.microsoft.com/store/apps/9NZLVCD128J4, icon: ri:windows-fill },
+        { url: https://github.com/CarlesRojas/kubic-client, icon: ri:github-fill },
+        { url: https://github.com/CarlesRojas/kubic-server, icon: ri:github-fill },
     ]
 qr: https://kubic.pinya.app/
 videoPosition: 0

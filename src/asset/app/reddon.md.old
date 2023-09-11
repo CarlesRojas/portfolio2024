@@ -6,7 +6,7 @@ description:
   [
     'Reddon is an app that connects to your current Reddit account and lets you navigate the most recent posts using horizontal scrolling.',
   ]
-links: [{ url: https://github.com/CarlesRojas/Reddon, type: github }]
+links: [{ url: https://github.com/CarlesRojas/Reddon, icon: ri:github-fill }]
 qr: false
 videoPosition: 0
 video: false

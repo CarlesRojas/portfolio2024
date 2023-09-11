@@ -9,9 +9,9 @@ description:
     ]
 links:
     [
-        { url: https://play.google.com/store/apps/details?id=app.pinya.simulchess, type: android },
-        { url: https://www.microsoft.com/store/apps/9N7L52DD9PFK, type: windows },
-        { url: https://github.com/CarlesRojas/simulchess, type: github },
+        { url: https://play.google.com/store/apps/details?id=app.pinya.simulchess, icon: ri:android-fill },
+        { url: https://www.microsoft.com/store/apps/9N7L52DD9PFK, icon: ri:windows-fill },
+        { url: https://github.com/CarlesRojas/simulchess, icon: ri:github-fill },
     ]
 qr: https://simulchess.pinya.app/
 videoPosition: 0

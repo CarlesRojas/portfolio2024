@@ -6,7 +6,7 @@ description:
   [
     'Play against as AI with three difficulty levels and enjoy the classic game of chess in the augmented world. Choose your favorite style, place the board on your table and enjoy!',
   ]
-links: [{ url: https://www.microsoft.com/en-us/store/p/holochess-beta/9nblggh40d7c, type: hololens }]
+links: [{ url: https://www.microsoft.com/en-us/store/p/holochess-beta/9nblggh40d7c, icon: ri:windows-fill }]
 qr: false
 videoPosition: 0
 video: false

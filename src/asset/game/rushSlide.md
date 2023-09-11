@@ -8,9 +8,9 @@ description:
     ]
 links:
     [
-        { url: https://play.google.com/store/apps/details?id=app.vercel.rushslide, type: android },
-        { url: https://www.microsoft.com/store/apps/9NJ1PDVTFVF1, type: windows },
-        { url: https://github.com/CarlesRojas/rush-slide, type: github },
+        { url: https://play.google.com/store/apps/details?id=app.vercel.rushslide, icon: ri:android-fill },
+        { url: https://www.microsoft.com/store/apps/9NJ1PDVTFVF1, icon: ri:windows-fill },
+        { url: https://github.com/CarlesRojas/rush-slide, icon: ri:github-fill },
     ]
 qr: https://rushslide.vercel.app/
 videoPosition: 0

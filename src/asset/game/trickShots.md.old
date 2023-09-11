@@ -6,7 +6,7 @@ description:
   [
     'Perform limitless trick shots with a holographic tennis ball that will interact with your surroundings. Add an assortment of different holographic objects like a basketball hoop, a paper bin or a couple of teleporting portals. Challenge yourself and achieve bigger combos to get the higher scores.',
   ]
-links: [{ url: https://www.microsoft.com/en-us/store/p/trickshots/9nkmv03xqcng, type: hololens }]
+links: [{ url: https://www.microsoft.com/en-us/store/p/trickshots/9nkmv03xqcng, icon: ri:windows-fill }]
 qr: false
 videoPosition: 0
 video: false

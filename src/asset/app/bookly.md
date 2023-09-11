@@ -9,9 +9,9 @@ description:
     ]
 links:
     [
-        { url: https://play.google.com/store/apps/details?id=app.vercel.bookly2, type: android },
-        { url: https://www.microsoft.com/store/apps/9P8HL4CVHVBM, type: windows },
-        { url: https://github.com/CarlesRojas/bookly2, type: github },
+        { url: https://play.google.com/store/apps/details?id=app.vercel.bookly2, icon: ri:android-fill },
+        { url: https://www.microsoft.com/store/apps/9P8HL4CVHVBM, icon: ri:windows-fill },
+        { url: https://github.com/CarlesRojas/bookly2, icon: ri:github-fill },
     ]
 qr: https://bookly2.vercel.app/
 videoPosition: 0

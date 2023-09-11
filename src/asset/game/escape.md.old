@@ -6,7 +6,7 @@ description:
   [
     'Use the phones accelerometer to move around a dark maze and collect power ups to escape from the inevitable red wall.',
   ]
-links: [{ url: https://play.google.com/store/apps/details?id=com.PinyaGames.Escape, type: android }]
+links: [{ url: https://play.google.com/store/apps/details?id=com.PinyaGames.Escape, icon: ri:android-fill }]
 qr: false
 videoPosition: 0
 video: true

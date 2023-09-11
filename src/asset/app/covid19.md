@@ -10,8 +10,8 @@ description:
     ]
 links:
     [
-        { url: https://github.com/CarlesRojas/estado-covid-client, type: github },
-        { url: https://github.com/CarlesRojas/estado-covid-server, type: github },
+        { url: https://github.com/CarlesRojas/estado-covid-client, icon: ri:github-fill },
+        { url: https://github.com/CarlesRojas/estado-covid-server, icon: ri:github-fill },
     ]
 qr: false # https://estado-covid.netlify.app/
 videoPosition: 2

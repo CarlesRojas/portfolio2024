@@ -8,8 +8,8 @@ description:
     ]
 links:
     [
-        { url: https://pinyagames.itch.io/neowar, type: itchio },
-        { url: https://github.com/CarlesRojas/Neowar, type: github },
+        { url: https://pinyagames.itch.io/neowar, icon: ri:gamepad-fill },
+        { url: https://github.com/CarlesRojas/Neowar, icon: ri:github-fill },
     ]
 qr: false
 videoPosition: 0

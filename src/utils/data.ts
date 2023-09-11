@@ -39,21 +39,14 @@ export const contactActions: ContactAction[] = [
     },
 ];
 
-export enum LinkType {
-    GITHUB = 'github',
-    ANDROID = 'android',
-    WINDOWS = 'windows',
-    HOLOLENS = 'hololens',
-    ITCHIO = 'itchio',
-    PDF = 'pdf',
-}
+export type LinkIcon = 'Github' | 'Android' | 'Windows' | 'Hololens' | 'Itchio';
 
 export interface Project {
     route: string;
     title: string;
     subtitle: string;
     description: string[];
-    links: { url: string; type: LinkType }[];
+    links: { url: string; icon: LinkIcon }[];
     qr: string | false;
     videoPosition: number;
     video: boolean;

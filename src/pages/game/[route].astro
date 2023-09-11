@@ -1,6 +1,7 @@
 ---
 import Description from '@components/Description.astro';
 import Game from '@components/Game.astro';
+import Links from '@components/Links.astro';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
@@ -13,12 +14,13 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title, route } = project;
+const { title, links } = project;
 ---
 
 <Layout title={title}>
     <main class="relative w-full h-fit">
         <Game project={project} />
         <Description project={project} />
+        {links && <Links project={project} />}
     </main>
 </Layout>

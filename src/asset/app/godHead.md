@@ -7,7 +7,7 @@ description:
         'Having trouble remembering what an item does? The Binding of Isaac has more than a thousand of them, so it is not surprising. Use this app to quickly find out everything about them.',
         'You can search the items by their icon, their name or their subtitle.',
     ]
-links: [{ url: https://github.com/CarlesRojas/GodHead, type: github }]
+links: [{ url: https://github.com/CarlesRojas/GodHead, icon: ri:github-fill }]
 qr: http://godhead.netlify.app/
 videoPosition: 0
 video: false

@@ -9,8 +9,8 @@ description:
   ]
 links:
   [
-    { url: https://github.com/CarlesRojas/matcheat-client, type: github },
-    { url: https://github.com/CarlesRojas/matcheat-server, type: github },
+    { url: https://github.com/CarlesRojas/matcheat-client, icon: ri:github-fill },
+    { url: https://github.com/CarlesRojas/matcheat-server, icon: ri:github-fill },
   ]
 qr: http://matcheat.netlify.app/
 videoPosition: 0

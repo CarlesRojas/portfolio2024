@@ -8,10 +8,10 @@ description:
         'The app will remind you of when to start and stop fasting and it will provide an explanation for the different phases of fasting.',
     ]
 links: [
-        # { url: https://play.google.com/store/apps/details?id=app.netlify.fanfastic, type: android },
-        # { url: https://www.microsoft.com/store/productId/9NFJ33VBGK91, type: windows },
-        { url: https://github.com/CarlesRojas/fanfastic-client, type: github },
-        { url: https://github.com/CarlesRojas/fanfastic-server, type: github },
+        # { url: https://play.google.com/store/apps/details?id=app.netlify.fanfastic, icon: ri:android-fill },
+        # { url: https://www.microsoft.com/store/productId/9NFJ33VBGK91, icon: ri:windows-fill },
+        { url: https://github.com/CarlesRojas/fanfastic-client, icon: ri:github-fill },
+        { url: https://github.com/CarlesRojas/fanfastic-server, icon: ri:github-fill },
     ]
 qr: false # https://fanfastic.netlify.app/
 videoPosition: 5

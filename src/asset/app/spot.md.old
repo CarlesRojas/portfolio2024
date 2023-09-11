@@ -8,8 +8,8 @@ description:
   ]
 links:
   [
-    { url: https://github.com/CarlesRojas/Spot2, type: github },
-    { url: https://github.com/CarlesRojas/Spot-Server, type: github },
+    { url: https://github.com/CarlesRojas/Spot2, icon: ri:github-fill },
+    { url: https://github.com/CarlesRojas/Spot-Server, icon: ri:github-fill },
   ]
 qr: false
 videoPosition: 0

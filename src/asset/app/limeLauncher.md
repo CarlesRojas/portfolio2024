@@ -8,8 +8,8 @@ description:
     ]
 links:
     [
-        { url: https://play.google.com/store/apps/details?id=app.pinya.lime, type: android },
-        { url: https://github.com/CarlesRojas/lime-launcher, type: github },
+        { url: https://play.google.com/store/apps/details?id=app.pinya.lime, icon: ri:android-fill },
+        { url: https://github.com/CarlesRojas/lime-launcher, icon: ri:github-fill },
     ]
 qr: https://play.google.com/store/apps/details?id=app.pinya.lime
 videoPosition: 0

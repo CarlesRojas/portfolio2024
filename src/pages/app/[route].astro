@@ -1,4 +1,5 @@
 ---
+import Links from '@components/Links.astro';
 import App from '../../components/App.astro';
 import Description from '../../components/Description.astro';
 import Layout from '../../layouts/Layout.astro';
@@ -13,12 +14,13 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title } = project;
+const { title, links } = project;
 ---
 
 <Layout title={title}>
     <main class="relative w-full h-fit">
         <App project={project} />
         <Description project={project} />
+        {links && <Links project={project} />}
     </main>
 </Layout>
