@@ -2,6 +2,7 @@
 import Section from '@layouts/Section.astro';
 import { MEDIA_URL } from '@utils/data';
 import { Image } from 'astro:assets';
+import Contact from './Contact.astro';
 ---
 
 <Section link="home">
@@ -24,5 +25,7 @@ import { Image } from 'astro:assets';
         <p class="text-lg md:text-2xl text-center lg:max-w-[65%] text-balance opacity-70">
             Full stack Software Engineer & Designer from Barcelona with +5 years of experience
         </p>
+
+        <Contact />
     </div>
 </Section>
