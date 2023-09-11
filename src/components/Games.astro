@@ -1,12 +1,11 @@
 ---
-import type { Project } from '@data/projects';
+import { games } from '@data/projects';
 import Section from '@layouts/Section.astro';
 import { MEDIA_URL } from '@utils/data';
 import { sortByDate } from '@utils/sortByDate';
 import { Image } from 'astro:assets';
-const games = await Astro.glob(`../asset/game/*.md`);
 
-const sortedGames = games.map((project) => project.frontmatter as Project).sort(sortByDate);
+const sortedGames = games.filter(({ disabled }) => !disabled).sort(sortByDate);
 ---
 
 <Section title="My Games" link="games">

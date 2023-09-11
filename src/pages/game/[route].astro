@@ -4,15 +4,17 @@ import Description from '@components/Description.astro';
 import Game from '@components/Game.astro';
 import Links from '@components/Links.astro';
 import Screenshots from '@components/Screenshots.astro';
+import { games } from '@data/projects';
 import Layout from '@layouts/Layout.astro';
 
 export async function getStaticPaths() {
-    const games = await Astro.glob(`../../asset/game/*.md`);
-
-    return games.flat().map((project) => ({
-        params: { route: project.frontmatter.route },
-        props: { project: project.frontmatter },
-    }));
+    return games
+        .filter(({ disabled }) => !disabled)
+        .flat()
+        .map((project) => ({
+            params: { route: project.route },
+            props: { project },
+        }));
 }
 
 const { project } = Astro.props;
