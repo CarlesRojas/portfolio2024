@@ -14,8 +14,7 @@ if (video) media.splice(0, 0, `${MEDIA_URL}/${route}/video.mp4`);
 ---
 
 <Section title="Screenshots">
-    <!-- <Carousel project={project} client:load /> -->
-    <ul class="flex flex-wrap gap-6 sm:gap-8 items-center justify-center">
+    <ul class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center">
         {
             media.map((url, index) => (
                 <li class="relative">
@@ -26,12 +25,14 @@ if (video) media.splice(0, 0, `${MEDIA_URL}/${route}/video.mp4`);
                             muted
                             class={`${
                                 horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                            } max-w-full rounded-lg smrounded-xl cursor-pointer`}
+                            } max-w-full rounded-lg smrounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
                             src={url}
                         />
                     ) : (
                         <img
-                            class={`${horizontal ? 'w-[32rem]' : 'h-[32rem]'} max-w-full rounded-lg smrounded-xl`}
+                            class={`${
+                                horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                            } max-w-full rounded-lg smrounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
                             src={url}
                             alt={`screenshot ${index} for project ${title}`}
                         />

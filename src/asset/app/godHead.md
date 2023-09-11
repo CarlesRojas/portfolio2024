@@ -11,7 +11,7 @@ links: [{ url: https://github.com/CarlesRojas/GodHead, icon: ri:github-fill }]
 qr: http://godhead.netlify.app/
 videoPosition: 0
 video: false
-numberOfScreenshots: 4
+numberOfScreenshots: 3 # 4
 process: 'GodHead is a Progressive Web App made with ReactJS targeting mobile and desktop devices. You can add it as an app to your PC, Android, or iPhone by scanning this QR and adding the page to your Home Screen.'
 date: 2021-05-01
 horizontal: true

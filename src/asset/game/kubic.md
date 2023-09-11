@@ -16,7 +16,7 @@ links:
 qr: https://kubic.pinya.app/
 videoPosition: 0
 video: true
-numberOfScreenshots: 5
+numberOfScreenshots: 3 # 5
 process: 'Kubic is a Progressive Web App made with ReactJS and ThreeJS. It targets mobile, tablet and desktop devices. The game is available through the Google Play Store and the Microsoft Store. You can also add it to your iPhone by scanning this QR and adding the website to your Home Screen.'
 date: 2022-02-01
 horizontal: false

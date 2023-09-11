@@ -14,7 +14,7 @@ links:
 qr: https://play.google.com/store/apps/details?id=app.pinya.lime
 videoPosition: 0
 video: false
-numberOfScreenshots: 7
+numberOfScreenshots: 4 # 7
 process: 'Lime Launcher was developed using Android Studio and available for download through the Google Play Store.'
 date: 2023-01-01
 horizontal: false

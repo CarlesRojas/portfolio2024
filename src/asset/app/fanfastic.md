@@ -16,7 +16,7 @@ links: [
 qr: false # https://fanfastic.netlify.app/
 videoPosition: 5
 video: true
-numberOfScreenshots: 5
+numberOfScreenshots: 3 # 5
 process: 'Fanfastic is a Progressive Web App made with ReactJS that targets mobile, tablet and desktop devices. It is available through the Google Play Store and in the Microsoft Store. You can also add it to your iPhone by scanning this QR and adding the website to your Home Screen.'
 date: 2022-01-01
 horizontal: false

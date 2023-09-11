@@ -15,7 +15,7 @@ links:
 qr: https://rushslide.vercel.app/
 videoPosition: 0
 video: true
-numberOfScreenshots: 4
+numberOfScreenshots: 3 # 4
 process: 'Rush Slide is a cross-platform puzzle game that can be played on mobile, tablet, and desktop devices. It was developed using NextJS and TypeScript, and is available for download through the Google Play Store and Microsoft Store. iPhone users can also access the game by scanning a QR code and adding the website to their home screen.'
 date: 2022-12-01
 horizontal: false
