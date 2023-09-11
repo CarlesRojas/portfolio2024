@@ -1,7 +1,6 @@
 ---
 import type { Project } from '@data/projects';
 import Section from '@layouts/Section.astro';
-import { MEDIA_URL } from '@utils/data';
 import Icon from 'astro-icon';
 import { Image } from 'astro:assets';
 
@@ -42,25 +41,25 @@ const maxWidth = {
                 <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition focus:scale-[1.05] hover:scale-[1.05] active:scale-[1.025] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
                     <a
                         class="relative w-full h-full p-[8%]"
-                        href={qr}
+                        href={qr.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={'qr'}
                     >
                         <Image
                             class="w-full h-full object-cover block dark:hidden"
-                            src={`${MEDIA_URL}/${route}/qr.webp`}
+                            src={qr.src}
                             alt={`project ${title} qr`}
-                            width={256}
-                            height={256}
+                            width={512}
+                            height={512}
                         />
 
                         <Image
                             class="w-full h-full object-cover hidden dark:block"
-                            src={`${MEDIA_URL}/${route}/qr_inverted.webp`}
+                            src={qr.srcInv}
                             alt={`project ${title} qr`}
-                            width={256}
-                            height={256}
+                            width={512}
+                            height={512}
                         />
                     </a>
                 </li>

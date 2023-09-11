@@ -1,7 +1,6 @@
 ---
 import { games } from '@data/projects';
 import Section from '@layouts/Section.astro';
-import { MEDIA_URL } from '@utils/data';
 import { sortByDate } from '@utils/sortByDate';
 import { Image } from 'astro:assets';
 
@@ -11,11 +10,11 @@ const sortedGames = games.filter(({ disabled }) => !disabled).sort(sortByDate);
 <Section title="My Games" link="games">
     <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {
-            sortedGames.map(({ route, title }, i) => (
+            sortedGames.map(({ route, title, poster }) => (
                 <li class="relative group focus-within:scale-[1.04] hover:scale-[1.04] active:scale-[1.02] transition">
                     <a href={`/game/${route}`} class="relative w-full h-fit outline-none focus:scale-[1.04] transition">
                         <Image
-                            src={`${MEDIA_URL}/${route}/poster.webp`}
+                            src={poster}
                             alt={`${title} poster image`}
                             width={640}
                             height={360}
@@ -23,7 +22,7 @@ const sortedGames = games.filter(({ disabled }) => !disabled).sort(sortByDate);
                         />
 
                         <Image
-                            src={`${MEDIA_URL}/${route}/poster.webp`}
+                            src={poster}
                             alt={`${title} poster image`}
                             width={640}
                             height={360}

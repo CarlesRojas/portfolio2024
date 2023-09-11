@@ -1,14 +1,13 @@
 ---
 import type { Project } from '@data/projects';
 import Section from '@layouts/Section.astro';
-import { MEDIA_URL } from '@utils/data';
 import { Image } from 'astro:assets';
 
 interface Props {
     project: Project;
 }
 
-const { title, subtitle, route, date: dateString } = Astro.props.project;
+const { title, subtitle, route, date: dateString, icon } = Astro.props.project;
 
 const date = new Date(dateString);
 const year = date.getFullYear();
@@ -18,10 +17,10 @@ const month = date.toLocaleString('default', { month: 'long' });
 <Section>
     <div class="relative w-full h-fit flex flex-col items-center gap-8">
         <Image
-            src={`${MEDIA_URL}/${route}/icon.webp`}
+            src={icon}
             alt={`${title} icon`}
-            width={256}
-            height={256}
+            width={200}
+            height={200}
             class="w-48 h-48 object-cover rounded-[3rem] shadow-xl"
             transition:name={`app-${route}`}
         />

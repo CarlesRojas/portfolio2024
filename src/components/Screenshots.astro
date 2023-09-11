@@ -1,43 +1,43 @@
 ---
 import type { Project } from '@data/projects';
 import Section from '@layouts/Section.astro';
-import { MEDIA_URL } from '@utils/data';
+import { Image } from 'astro:assets';
 
 interface Props {
     project: Project;
 }
 
 const { project } = Astro.props;
-const { route, title, numberOfScreenshots, video, horizontal } = project;
-
-const media = Array.from({ length: numberOfScreenshots }, (_, i) => `${MEDIA_URL}/${route}/screenshot${i + 1}.webp`);
-if (video) media.splice(0, 0, `${MEDIA_URL}/${route}/video.mp4`);
+const { route, title, screenshots, video, horizontal } = project;
 ---
 
 <Section title="Screenshots">
     <ul class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center">
         {
-            media.map((url, index) => (
+            video && (
+                <video
+                    controls
+                    autoplay
+                    muted
+                    class={`${
+                        horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                    } max-w-full w-fit rounded-lg smrounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
+                    src={video}
+                />
+            )
+        }
+        {
+            screenshots.map((screenshot, index) => (
                 <li class="relative">
-                    {video && index === 0 ? (
-                        <video
-                            controls
-                            autoplay
-                            muted
-                            class={`${
-                                horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                            } max-w-full rounded-lg smrounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
-                            src={url}
-                        />
-                    ) : (
-                        <img
-                            class={`${
-                                horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                            } max-w-full rounded-lg smrounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
-                            src={url}
-                            alt={`screenshot ${index} for project ${title}`}
-                        />
-                    )}
+                    <Image
+                        class={`${
+                            horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                        } max-w-full w-fit rounded-lg smrounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
+                        src={screenshot}
+                        height={horizontal ? undefined : 512}
+                        width={horizontal ? 512 : undefined}
+                        alt={`screenshot ${index} for project ${title}`}
+                    />
                 </li>
             ))
         }
