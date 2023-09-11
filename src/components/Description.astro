@@ -1,0 +1,22 @@
+---
+import Section from '@layouts/Section.astro';
+import { type Project } from '@utils/data';
+
+interface Props {
+    project: Project;
+}
+
+const { description, process } = Astro.props.project;
+---
+
+<Section title="Description">
+    <div class="relative w-full h-fit flex flex-col items-center gap-8 max-w-xl">
+        <div class="relative w-full h-fit flex flex-col items-center gap-2">
+            {description.map((paragraph) => <p class="text-center opacity-90">{paragraph}</p>)}
+        </div>
+
+        <div class="relative w-full h-fit flex flex-col items-center gap-2">
+            <p class="text-sm text-center opacity-50">{process}</p>
+        </div>
+    </div>
+</Section>

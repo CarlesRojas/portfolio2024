@@ -1,7 +1,7 @@
 ---
-import { Image } from 'astro:assets';
+import App from '../../components/App.astro';
+import Description from '../../components/Description.astro';
 import Layout from '../../layouts/Layout.astro';
-import { MEDIA_URL } from '../../utils/data';
 
 export async function getStaticPaths() {
     const apps = await Astro.glob(`../../asset/app/*.md`);
@@ -13,18 +13,12 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title, route } = project;
+const { title } = project;
 ---
 
 <Layout title={title}>
-    <main class="relative w-full h-fit flex items-center justify-center py-24">
-        <Image
-            src={`${MEDIA_URL}/${route}/icon.webp`}
-            alt={`${title} icon`}
-            width={256}
-            height={256}
-            class="w-64 h-64 object-cover rounded-[4rem] shadow-xl"
-            transition:name={`app-${route}`}
-        />
+    <main class="relative w-full h-fit">
+        <App project={project} />
+        <Description project={project} />
     </main>
 </Layout>

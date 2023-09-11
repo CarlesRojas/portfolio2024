@@ -1,7 +1,7 @@
 ---
-import { Image } from 'astro:assets';
+import Description from '@components/Description.astro';
+import Game from '@components/Game.astro';
 import Layout from '../../layouts/Layout.astro';
-import { MEDIA_URL } from '../../utils/data';
 
 export async function getStaticPaths() {
     const games = await Astro.glob(`../../asset/game/*.md`);
@@ -17,14 +17,8 @@ const { title, route } = project;
 ---
 
 <Layout title={title}>
-    <main class="relative w-full h-fit flex items-center justify-center py-24">
-        <Image
-            src={`${MEDIA_URL}/${route}/poster.webp`}
-            alt={`${title} poster image`}
-            width={640}
-            height={360}
-            class="object-cover h-[22.5rem] w-[40rem] rounded-3xl shadow-xl"
-            transition:name={`game-${route}`}
-        />
+    <main class="relative w-full h-fit">
+        <Game project={project} />
+        <Description project={project} />
     </main>
 </Layout>

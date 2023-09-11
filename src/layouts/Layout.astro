@@ -88,11 +88,8 @@ const { title } = Astro.props;
         </div>
 
         <slot name="header" />
-
         <slot />
-
         <Footer />
-
         <Theme client:load transition:persist />
 
         <div class="absolute bottom-0 left-0 w-screen h-screen pointer-events-none select-none -z-10">
