@@ -1,9 +1,7 @@
 ---
 import SkillList from '@components/SkillList';
+import { skills } from '@data/skill';
 import Section from '@layouts/Section.astro';
-import type { Skill } from '@utils/data';
-
-const skills: Skill[] = Object.values((await Astro.glob('../asset/aboutme/skills.md'))[0].frontmatter);
 ---
 
 <Section title="My Skills" link="skills">

@@ -1,5 +1,5 @@
+import { links } from '@data/links';
 import { useActiveSection } from '@hooks/useActiveSection';
-import { links } from '@utils/data';
 import { motion } from 'framer-motion';
 
 const Header = () => {

@@ -1,20 +1,29 @@
----
-[
+export interface Experience {
+    title: string;
+    place: string;
+    date: string;
+    icon: string;
+    description: string[];
+}
+
+export const experiences: Experience[] = [
     {
         title: 'Fullstack Software Engineer & Product Owner',
         place: 'MundiMoto Group',
         date: '2022 - Present',
         icon: 'Computer',
-        description:
-            ["Fullstack developer and product owner for one of the company's products. Using NextJS, Django and AWS."],
+        description: [
+            "Fullstack developer and product owner for one of the company's products. Using NextJS, Django and AWS.",
+        ],
     },
     {
         title: 'Frontend Software Engineer',
         place: 'Accedo.tv',
         date: '2021 - 2022',
         icon: 'React',
-        description:
-            ['Frontend developer for Smart TV streaming and video on demand apps. Using React, Redux and Typescript.'],
+        description: [
+            'Frontend developer for Smart TV streaming and video on demand apps. Using React, Redux and Typescript.',
+        ],
     },
     {
         title: 'Frontend Web Developer',
@@ -28,8 +37,9 @@
         place: 'Pinya Games - Freelance',
         date: '2016 - Present',
         icon: 'Gamepad',
-        description:
-            ["Freelance game developer. I've worked in several Unity games and some web-based Typescript ones."],
+        description: [
+            "Freelance game developer. I've worked in several Unity games and some web-based Typescript ones.",
+        ],
     },
     {
         title: 'Certificate of Proficiency in English - C2 Level',
@@ -52,5 +62,4 @@
         icon: 'Graduation',
         description: [],
     },
-]
----
+];

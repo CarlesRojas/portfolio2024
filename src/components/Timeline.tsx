@@ -1,12 +1,12 @@
-import type { Experience } from '@utils/data';
+import type { Experience } from '@data/experience';
 import { motion } from 'framer-motion';
 import SVG from 'react-inlinesvg';
 
 interface Props {
-    experience: Experience[];
+    experiences: Experience[];
 }
 
-const Timeline = ({ experience }: Props) => {
+const Timeline = ({ experiences }: Props) => {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024;
 
     return (
@@ -15,7 +15,7 @@ const Timeline = ({ experience }: Props) => {
                 <div className="h-full w-[0.4rem] rounded-full bg-gray-200 dark:bg-gray-700 opacity-70" />
             </div>
 
-            {experience.map(({ title, place, date, icon, description }, index) => (
+            {experiences.map(({ title, place, date, icon, description }, index) => (
                 <div
                     key={index}
                     className="grid-areas-timeline-mobile lg:grid-areas-timeline lg:even:grid-areas-timeline-inverted w-full grid grid-cols-[4rem_minmax(0,_1fr)] lg:grid-cols-[minmax(0,_1fr)_4rem_minmax(0,_1fr)] gap-4 group"

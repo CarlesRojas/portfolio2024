@@ -1,4 +1,4 @@
-import type { Skill } from '@utils/data';
+import type { Skill } from '@data/skill';
 import { motion } from 'framer-motion';
 import SVG from 'react-inlinesvg';
 

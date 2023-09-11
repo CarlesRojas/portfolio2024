@@ -1,5 +1,5 @@
+import { links } from '@data/links';
 import { useAutoResetState } from '@hooks/useAutoResetState';
-import { links } from '@utils/data';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 export const useActiveSection = () => {
