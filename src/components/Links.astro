@@ -40,9 +40,9 @@ const maxWidth = {
     <ul class={`grid ${rows} ${cols} ${maxWidth[cols]} w-full h-fit gap-2 sm:gap-4`}>
         {
             qr && (
-                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition focus:scale-[1.05] hover:scale-[1.05] active:scale-[1.025] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
+                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition hover:scale-[1.05] focus-within:scale-[1.05] active:scale-[1.025] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
                     <a
-                        class="relative w-full h-full p-[8%]"
+                        class="relative w-full h-full p-[8%] outline-none"
                         href={qr.url}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -70,10 +70,10 @@ const maxWidth = {
 
         {
             links.map(({ url, icon }) => (
-                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl items-center justify-center outline-none transition focus:scale-110 hover:scale-110 active:scale-105 font-medium text-gray-600 hover:text-gray-950 focus:text-gray-950 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
+                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl items-center justify-center outline-none transition focus-within:scale-110 hover:scale-110 active:scale-105 font-medium text-gray-600 hover:text-gray-950 focus:text-gray-950 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
                     <a
                         href={url}
-                        class="relative w-full h-full p-[20%] text-2xl font-bold"
+                        class="relative w-full h-full p-[20%] text-2xl font-bold outline-none"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`link to ${url}`}
