@@ -14,21 +14,6 @@ const { title, screenshots, video, horizontal } = project;
 <Section title="Screenshots" smallGap>
     <ul class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center">
         {
-            video && (
-                <li class="relative">
-                    <video
-                        controls
-                        autoplay
-                        muted
-                        class={`${
-                            horizontal ? 'w-[32rem]' : 'h-[32rem]'
-                        } max-w-full rounded-lg object-contain sm:rounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
-                        src={video}
-                    />
-                </li>
-            )
-        }
-        {
             screenshots.map((screenshot, index) => (
                 <li class="relative">
                     <Image
@@ -42,6 +27,21 @@ const { title, screenshots, video, horizontal } = project;
                     />
                 </li>
             ))
+        }
+        {
+            video && (
+                <li class="relative">
+                    <video
+                        controls
+                        autoplay
+                        muted
+                        class={`${
+                            horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                        } max-w-full rounded-lg object-contain sm:rounded-xl cursor-pointer border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md shadow-lg`}
+                        src={video}
+                    />
+                </li>
+            )
         }
     </ul>
 </Section>
