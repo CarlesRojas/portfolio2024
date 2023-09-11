@@ -1,10 +1,10 @@
 import Icon from '@asset/fanfastic/icon.png';
 import Poster from '@asset/fanfastic/poster.png';
-import Screenshot1 from '@asset/fanfastic/screenshot1.jpg';
-import Screenshot2 from '@asset/fanfastic/screenshot2.jpg';
-import Screenshot3 from '@asset/fanfastic/screenshot3.jpg';
-// import Screenshot4 from '@asset/fanfastic/screenshot4.jpg';
-// import Screenshot5 from '@asset/fanfastic/screenshot5.jpg';
+import Screenshot1 from '@asset/fanfastic/screenshot1.png';
+import Screenshot2 from '@asset/fanfastic/screenshot2.png';
+import Screenshot3 from '@asset/fanfastic/screenshot3.png';
+// import Screenshot4 from '@asset/fanfastic/screenshot4.png';
+// import Screenshot5 from '@asset/fanfastic/screenshot5.png';
 import Video from '@asset/fanfastic/video.mp4';
 
 import type { Project } from '@data/projects';
