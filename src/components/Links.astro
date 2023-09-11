@@ -8,22 +8,24 @@ interface Props {
     project: Project;
 }
 
-const { route, title, links, qr } = Astro.props.project;
+const { title, links, qr } = Astro.props.project;
 
 const cols =
     links.length === 0
-        ? qr
+        ? !!qr
             ? 'grid-cols-2'
             : 'grid-cols-0'
         : links.length <= 2
-        ? qr
+        ? !!qr
             ? 'grid-cols-3'
             : links.length === 1
             ? 'grid-cols-1'
             : 'grid-cols-2'
-        : qr
+        : !!qr
         ? 'grid-cols-4'
         : 'grid-cols-3';
+
+const rows = links.length > 2 ? 'grid-rows-2' : !!qr ? 'grid-rows-2' : 'grid-rows-1';
 
 const maxWidth = {
     'grid-cols-4': 'max-w-[32rem]',
@@ -34,8 +36,8 @@ const maxWidth = {
 };
 ---
 
-<Section title="Links">
-    <ul class={`grid grid-rows-2 ${cols} ${maxWidth[cols]} w-full h-fit gap-2 sm:gap-4`}>
+<Section title="Links" smallGap>
+    <ul class={`grid ${rows} ${cols} ${maxWidth[cols]} w-full h-fit gap-2 sm:gap-4`}>
         {
             qr && (
                 <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition focus:scale-[1.05] hover:scale-[1.05] active:scale-[1.025] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">

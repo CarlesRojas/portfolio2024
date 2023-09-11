@@ -8,10 +8,10 @@ interface Props {
 }
 
 const { project } = Astro.props;
-const { route, title, screenshots, video, horizontal } = project;
+const { title, screenshots, video, horizontal } = project;
 ---
 
-<Section title="Screenshots">
+<Section title="Screenshots" smallGap>
     <ul class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center">
         {
             video && (

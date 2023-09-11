@@ -4,8 +4,12 @@ import Back from '@components/Back.astro';
 import Description from '@components/Description.astro';
 import Links from '@components/Links.astro';
 import Screenshots from '@components/Screenshots.astro';
-import { apps } from '@data/projects';
+import { apps, type Project } from '@data/projects';
 import Layout from '@layouts/Layout.astro';
+
+interface Props {
+    project: Project;
+}
 
 export async function getStaticPaths() {
     return apps
@@ -17,7 +21,9 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title, links } = project;
+const { title, links, qr } = project;
+
+const showLinks = links.length > 0 || !!qr;
 ---
 
 <Layout title={title}>
@@ -27,6 +33,6 @@ const { title, links } = project;
         <App project={project} />
         <Screenshots project={project} />
         <Description project={project} />
-        {links && <Links project={project} />}
+        {showLinks && <Links project={project} />}
     </main>
 </Layout>
