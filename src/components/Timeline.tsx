@@ -10,7 +10,7 @@ const Timeline = ({ experience }: Props) => {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024;
 
     return (
-        <div className="relative w-full flex flex-col items-center justify-center gap-8 max-w-5xl pt-12">
+        <div className="relative w-full flex flex-col items-center justify-center gap-8 max-w-5xl pt-12 overflow-x-hidden">
             <div className="top-0 absolute h-full w-16 flex justify-center left-0 lg:left-[unset]">
                 <div className="h-full w-[0.4rem] rounded-full bg-gray-200 dark:bg-gray-700 opacity-70" />
             </div>
