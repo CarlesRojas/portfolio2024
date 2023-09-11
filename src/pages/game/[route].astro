@@ -3,6 +3,7 @@ import Back from '@components/Back.astro';
 import Description from '@components/Description.astro';
 import Game from '@components/Game.astro';
 import Links from '@components/Links.astro';
+import Screenshots from '@components/Screenshots.astro';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
@@ -23,6 +24,7 @@ const { title, links } = project;
 
     <main class="relative w-full h-fit">
         <Game project={project} />
+        <Screenshots project={project} />
         <Description project={project} />
         {links && <Links project={project} />}
     </main>

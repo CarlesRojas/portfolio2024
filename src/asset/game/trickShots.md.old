@@ -13,4 +13,5 @@ video: false
 numberOfScreenshots: 4
 process: 'TrickShots is a game made with Unity targeting the HoloLens device by Microsoft. The 3D holograms that can be placed into the world have been modeled using SolidWorks and Maya and textured with Photoshop. The game is coded in C# and is currently published on the Windows Store, available only for the HoloLens.'
 date: 2017-03-01
+horizontal: true
 ---

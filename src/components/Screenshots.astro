@@ -1,0 +1,43 @@
+---
+import Section from '@layouts/Section.astro';
+import { MEDIA_URL, type Project } from '@utils/data';
+
+interface Props {
+    project: Project;
+}
+
+const { project } = Astro.props;
+const { route, title, numberOfScreenshots, video, horizontal } = project;
+
+const media = Array.from({ length: numberOfScreenshots }, (_, i) => `${MEDIA_URL}/${route}/screenshot${i + 1}.webp`);
+if (video) media.splice(0, 0, `${MEDIA_URL}/${route}/video.mp4`);
+---
+
+<Section title="Screenshots">
+    <!-- <Carousel project={project} client:load /> -->
+    <ul class="flex flex-wrap gap-6 sm:gap-8 items-center justify-center">
+        {
+            media.map((url, index) => (
+                <li class="relative">
+                    {video && index === 0 ? (
+                        <video
+                            controls
+                            autoplay
+                            muted
+                            class={`${
+                                horizontal ? 'w-[32rem]' : 'h-[32rem]'
+                            } max-w-full rounded-lg smrounded-xl cursor-pointer`}
+                            src={url}
+                        />
+                    ) : (
+                        <img
+                            class={`${horizontal ? 'w-[32rem]' : 'h-[32rem]'} max-w-full rounded-lg smrounded-xl`}
+                            src={url}
+                            alt={`screenshot ${index} for project ${title}`}
+                        />
+                    )}
+                </li>
+            ))
+        }
+    </ul>
+</Section>

@@ -53,6 +53,7 @@ export interface Project {
     numberOfScreenshots: number;
     process: string;
     date: Date;
+    horizontal: boolean;
 }
 
 export const MEDIA_URL = '/asset';

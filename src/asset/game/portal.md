@@ -13,4 +13,5 @@ video: false
 numberOfScreenshots: 4
 process: 'Portal is a work in progress game made with Unity targeting Windows devices. The sprites were created using Photoshop and Illustrator. The game is coded in C# and is not yet available.'
 date: 2019-07-01
+horizontal: true
 ---

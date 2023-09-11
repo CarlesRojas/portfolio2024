@@ -18,4 +18,5 @@ video: true
 numberOfScreenshots: 7
 process: 'Scoot is a Progressive Web App made with ReactJS that targets mobile, tablet and desktop devices. You can also add it to your phone by scanning or clicking this QR and adding the website to your Home Screen.'
 date: 2022-05-01
+horizontal: false
 ---
