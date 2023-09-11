@@ -3,10 +3,10 @@ export interface Experience {
     place: string;
     date: string;
     icon: string;
-    description: readonly string[];
+    description: string[];
 }
 
-export const experiences: readonly Experience[] = [
+export const experiences: Experience[] = [
     {
         title: 'Fullstack Software Engineer & Product Owner',
         place: 'MundiMoto Group',
@@ -62,4 +62,4 @@ export const experiences: readonly Experience[] = [
         icon: 'Graduation',
         description: [],
     },
-] as const;
+];
