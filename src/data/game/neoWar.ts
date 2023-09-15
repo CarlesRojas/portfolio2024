@@ -3,9 +3,9 @@ import Poster from '@asset/neoWar/poster.png';
 import Screenshot1 from '@asset/neoWar/screenshot1.png';
 import Screenshot2 from '@asset/neoWar/screenshot2.png';
 import Screenshot3 from '@asset/neoWar/screenshot3.png';
-// import Screenshot4 from '@asset/neoWar/screenshot4.png';
-// import Screenshot5 from '@asset/neoWar/screenshot5.png';
-// import Screenshot6 from '@asset/neoWar/screenshot6.png';
+import Screenshot4 from '@asset/neoWar/screenshot4.png';
+import Screenshot5 from '@asset/neoWar/screenshot5.png';
+import Screenshot6 from '@asset/neoWar/screenshot6.png';
 import Video from '@asset/neoWar/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -15,14 +15,7 @@ export const neoWar: Project = {
     title: 'NeoWar',
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5, Screenshot6],
     subtitle: 'Avoid the endless stream of neon enemies coming at you!',
     description: [
         'Control your neon spaceship and shoot down the opposition trying to bring you down. Grab powerups to help you get out of sticky situations and hang on as much as possible.',

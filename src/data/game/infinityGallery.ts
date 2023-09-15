@@ -4,10 +4,10 @@ import Screenshot1 from '@asset/infinityGallery/screenshot1.png';
 import Screenshot2 from '@asset/infinityGallery/screenshot2.png';
 import Screenshot3 from '@asset/infinityGallery/screenshot3.png';
 import Screenshot4 from '@asset/infinityGallery/screenshot4.png';
-// import Screenshot5 from '@asset/infinityGallery/screenshot5.png';
-// import Screenshot6 from '@asset/infinityGallery/screenshot6.png';
-// import Screenshot7 from '@asset/infinityGallery/screenshot7.png';
-// import Screenshot8 from '@asset/infinityGallery/screenshot8.png';
+import Screenshot5 from '@asset/infinityGallery/screenshot5.png';
+import Screenshot6 from '@asset/infinityGallery/screenshot6.png';
+import Screenshot7 from '@asset/infinityGallery/screenshot7.png';
+import Screenshot8 from '@asset/infinityGallery/screenshot8.png';
 
 import type { Project } from '@data/projects';
 
@@ -21,10 +21,10 @@ export const infinityGallery: Project = {
         Screenshot2,
         Screenshot3,
         Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-        // Screenshot7,
-        // Screenshot8,
+        Screenshot5,
+        Screenshot6,
+        Screenshot7,
+        Screenshot8,
     ],
     subtitle: 'The biggest collection of pictures in the world, for a specific kind of pictures.',
     description: [

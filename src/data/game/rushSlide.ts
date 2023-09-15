@@ -1,11 +1,11 @@
 import Icon from '@asset/rushSlide/icon.png';
 import Poster from '@asset/rushSlide/poster.png';
+import Qr from '@asset/rushSlide/qr.png';
+import QrInv from '@asset/rushSlide/qr_inverted.png';
 import Screenshot1 from '@asset/rushSlide/screenshot1.png';
 import Screenshot2 from '@asset/rushSlide/screenshot2.png';
 import Screenshot3 from '@asset/rushSlide/screenshot3.png';
-// import Screenshot4 from '@asset/rushSlide/screenshot4.png';
-import Qr from '@asset/rushSlide/qr.png';
-import QrInv from '@asset/rushSlide/qr_inverted.png';
+import Screenshot4 from '@asset/rushSlide/screenshot4.png';
 import Video from '@asset/rushSlide/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -15,12 +15,7 @@ export const rushSlide: Project = {
     title: 'Rush Slide',
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4],
     subtitle: 'Rush Hour is a puzzle game where players use strategy to escape a congested grid.',
     description: [
         'Rush Slide is a puzzle game that challenges players to manoeuvre a series of pieces in a congested grid, with the goal of creating a clear path for the red piece to exit the grid. Players must carefully shift the positions of the long and short pieces on the board, using logic and strategy to find the solution.',

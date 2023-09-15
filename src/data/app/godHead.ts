@@ -1,11 +1,11 @@
 import Icon from '@asset/godHead/icon.png';
 import Poster from '@asset/godHead/poster.png';
+import Qr from '@asset/godHead/qr.png';
+import QrInv from '@asset/godHead/qr_inverted.png';
 import Screenshot1 from '@asset/godHead/screenshot1.png';
 import Screenshot2 from '@asset/godHead/screenshot2.png';
 import Screenshot3 from '@asset/godHead/screenshot3.png';
-// import Screenshot4 from '@asset/godHead/screenshot4.png';
-import Qr from '@asset/godHead/qr.png';
-import QrInv from '@asset/godHead/qr_inverted.png';
+import Screenshot4 from '@asset/godHead/screenshot4.png';
 
 import type { Project } from '@data/projects';
 
@@ -14,12 +14,7 @@ export const godHead: Project = {
     title: 'GodHead',
     poster: Poster,
     icon: Icon,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4],
     subtitle: 'Find out what each item does in The Binding of Isaac: Repentance.',
     description: [
         'Having trouble remembering what an item does? The Binding of Isaac has more than a thousand of them, so it is not surprising. Use this app to quickly find out everything about them.',

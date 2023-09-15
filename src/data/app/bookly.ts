@@ -1,13 +1,13 @@
 import Icon from '@asset/bookly/icon.png';
 import Poster from '@asset/bookly/poster.png';
+import Qr from '@asset/bookly/qr.png';
+import QrInv from '@asset/bookly/qr_inverted.png';
 import Screenshot1 from '@asset/bookly/screenshot1.png';
 import Screenshot2 from '@asset/bookly/screenshot2.png';
 import Screenshot3 from '@asset/bookly/screenshot3.png';
 import Screenshot4 from '@asset/bookly/screenshot4.png';
-// import Screenshot5 from '@asset/bookly/screenshot5.png';
-// import Screenshot6 from '@asset/bookly/screenshot6.png';
-import Qr from '@asset/bookly/qr.png';
-import QrInv from '@asset/bookly/qr_inverted.png';
+import Screenshot5 from '@asset/bookly/screenshot5.png';
+import Screenshot6 from '@asset/bookly/screenshot6.png';
 
 import type { Project } from '@data/projects';
 
@@ -15,14 +15,7 @@ export const bookly: Project = {
     route: 'bookly',
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5, Screenshot6],
     title: 'Bookly',
     subtitle: 'Keep track of the books you’ve read and the ones you wish to read.',
     description: [

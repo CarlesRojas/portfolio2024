@@ -3,8 +3,8 @@ import Poster from '@asset/fanfastic/poster.png';
 import Screenshot1 from '@asset/fanfastic/screenshot1.png';
 import Screenshot2 from '@asset/fanfastic/screenshot2.png';
 import Screenshot3 from '@asset/fanfastic/screenshot3.png';
-// import Screenshot4 from '@asset/fanfastic/screenshot4.png';
-// import Screenshot5 from '@asset/fanfastic/screenshot5.png';
+import Screenshot4 from '@asset/fanfastic/screenshot4.png';
+import Screenshot5 from '@asset/fanfastic/screenshot5.png';
 import Video from '@asset/fanfastic/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -14,13 +14,7 @@ export const fanfastic: Project = {
     title: 'Fanfastic',
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5],
     subtitle: 'Keep track of your fasting schedule in a healthy way.',
     description: [
         'In Fanfastic you can setup any intermittent fasting routine you wish. Choose how long you want to fast for and when to start. You can also track your weight and BMI.',

@@ -1,14 +1,14 @@
 import Icon from '@asset/scoot/icon.png';
 import Poster from '@asset/scoot/poster.png';
+import Qr from '@asset/scoot/qr.png';
+import QrInv from '@asset/scoot/qr_inverted.png';
 import Screenshot1 from '@asset/scoot/screenshot1.png';
 import Screenshot2 from '@asset/scoot/screenshot2.png';
 import Screenshot3 from '@asset/scoot/screenshot3.png';
-// import Screenshot4 from '@asset/scoot/screenshot4.png';
-// import Screenshot5 from '@asset/scoot/screenshot5.png';
-// import Screenshot6 from '@asset/scoot/screenshot6.png';
-// import Screenshot7 from '@asset/scoot/screenshot7.png';
-import Qr from '@asset/scoot/qr.png';
-import QrInv from '@asset/scoot/qr_inverted.png';
+import Screenshot4 from '@asset/scoot/screenshot4.png';
+import Screenshot5 from '@asset/scoot/screenshot5.png';
+import Screenshot6 from '@asset/scoot/screenshot6.png';
+import Screenshot7 from '@asset/scoot/screenshot7.png';
 import Video from '@asset/scoot/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -18,15 +18,7 @@ export const scoot: Project = {
     title: 'Scoot',
     poster: Poster,
     icon: Icon,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-        // Screenshot7
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5, Screenshot6, Screenshot7],
     subtitle: 'Navigate a great catalog of motorcycles by Mundimoto.',
     description: [
         'The application allows you to explore Mundimoto’s motorcycles while it learns your preferences to show you more relevant results.',

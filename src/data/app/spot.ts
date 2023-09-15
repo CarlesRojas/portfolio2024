@@ -3,9 +3,9 @@ import Poster from '@asset/spot/poster.png';
 import Screenshot1 from '@asset/spot/screenshot1.png';
 import Screenshot2 from '@asset/spot/screenshot2.png';
 import Screenshot3 from '@asset/spot/screenshot3.png';
-// import Screenshot4 from '@asset/spot/screenshot4.png';
-// import Screenshot5 from '@asset/spot/screenshot5.png';
-// import Screenshot6 from '@asset/spot/screenshot6.png';
+import Screenshot4 from '@asset/spot/screenshot4.png';
+import Screenshot5 from '@asset/spot/screenshot5.png';
+import Screenshot6 from '@asset/spot/screenshot6.png';
 import Video from '@asset/spot/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -16,14 +16,7 @@ export const spot: Project = {
     icon: Icon,
     poster: Poster,
 
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5, Screenshot6],
     subtitle: 'A minimal and traditional client for Spotify.',
     description: [
         'Spot is an app that connects to your current Spotify account and lets you explore your music using a traditional library with a minimalistic design.',

@@ -3,9 +3,9 @@ import Poster from '@asset/letsDrive/poster.png';
 import Screenshot1 from '@asset/letsDrive/screenshot1.png';
 import Screenshot2 from '@asset/letsDrive/screenshot2.png';
 import Screenshot3 from '@asset/letsDrive/screenshot3.png';
-// import Screenshot4 from '@asset/letsDrive/screenshot4.png';
-// import Screenshot5 from '@asset/letsDrive/screenshot5.png';
-// import Screenshot6 from '@asset/letsDrive/screenshot6.png';
+import Screenshot4 from '@asset/letsDrive/screenshot4.png';
+import Screenshot5 from '@asset/letsDrive/screenshot5.png';
+import Screenshot6 from '@asset/letsDrive/screenshot6.png';
 import Video from '@asset/letsDrive/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -15,14 +15,7 @@ export const letsDrive: Project = {
     title: "Let's Drive",
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-        // Screenshot6,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5, Screenshot6],
 
     subtitle: 'Deliver all cars to their destination while avoiding your past trips!',
     description: [

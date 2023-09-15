@@ -14,6 +14,9 @@ module.exports = {
                 timeline: ['date icon job'],
                 'timeline-inverted': ['job icon date'],
             },
+            screens: {
+                'only-touch': { raw: '(hover: none)' },
+            },
         },
     },
 

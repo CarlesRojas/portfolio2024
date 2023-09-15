@@ -1,12 +1,12 @@
 import Icon from '@asset/simulchess/icon.png';
 import Poster from '@asset/simulchess/poster.png';
+import Qr from '@asset/simulchess/qr.png';
+import QrInv from '@asset/simulchess/qr_inverted.png';
 import Screenshot1 from '@asset/simulchess/screenshot1.png';
 import Screenshot2 from '@asset/simulchess/screenshot2.png';
 import Screenshot3 from '@asset/simulchess/screenshot3.png';
-// import Screenshot4 from '@asset/simulchess/screenshot4.png';
-// import Screenshot5 from '@asset/simulchess/screenshot5.png';
-import Qr from '@asset/simulchess/qr.png';
-import QrInv from '@asset/simulchess/qr_inverted.png';
+import Screenshot4 from '@asset/simulchess/screenshot4.png';
+import Screenshot5 from '@asset/simulchess/screenshot5.png';
 import Video from '@asset/simulchess/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -16,13 +16,7 @@ export const simulchess: Project = {
     title: 'SimulChess',
     icon: Icon,
     poster: Poster,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5],
 
     subtitle: 'A chess variant where turns are played simultaneously.',
     description: [

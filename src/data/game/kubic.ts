@@ -1,12 +1,12 @@
 import Icon from '@asset/kubic/icon.png';
 import Poster from '@asset/kubic/poster.png';
+import Qr from '@asset/kubic/qr.png';
+import QrInv from '@asset/kubic/qr_inverted.png';
 import Screenshot1 from '@asset/kubic/screenshot1.png';
 import Screenshot2 from '@asset/kubic/screenshot2.png';
 import Screenshot3 from '@asset/kubic/screenshot3.png';
-// import Screenshot4 from '@asset/kubic/screenshot4.png';
-// import Screenshot5 from '@asset/kubic/screenshot5.png';
-import Qr from '@asset/kubic/qr.png';
-import QrInv from '@asset/kubic/qr_inverted.png';
+import Screenshot4 from '@asset/kubic/screenshot4.png';
+import Screenshot5 from '@asset/kubic/screenshot5.png';
 import Video from '@asset/kubic/video.mp4';
 
 import type { Project } from '@data/projects';
@@ -15,13 +15,7 @@ export const kubic: Project = {
     route: 'kubic',
     poster: Poster,
     icon: Icon,
-    screenshots: [
-        Screenshot1,
-        Screenshot2,
-        Screenshot3,
-        // Screenshot4,
-        // Screenshot5,
-    ],
+    screenshots: [Screenshot1, Screenshot2, Screenshot3, Screenshot4, Screenshot5],
     title: 'Kubic',
     subtitle: 'Stack and puzzle the 3D tetrominos to avoid them getting to the top!',
     description: [
