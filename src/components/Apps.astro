@@ -19,16 +19,16 @@ const sortedApps = apps.filter(({ disabled }) => !disabled).sort(sortByDate);
                         <Image
                             src={icon}
                             alt={`${title} icon`}
-                            width={128}
-                            height={128}
+                            width={256}
+                            height={256}
                             class="opacity-0 group-hover:opacity-70 group-focus-within:opacity-70 dark:group-hover:opacity-50 dark:group-focus-within:opacity-50 transition-opacity blur-xl -z-10 absolute top-0 w-32 h-32 object-cover rounded-xl"
                         />
 
                         <Image
                             src={icon}
                             alt={`${title} icon`}
-                            width={128}
-                            height={128}
+                            width={256}
+                            height={256}
                             class="w-32 h-32 object-cover rounded-[2rem] shadow-xl"
                             transition:name={`app-${route}`}
                         />

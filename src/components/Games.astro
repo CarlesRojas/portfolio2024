@@ -16,16 +16,16 @@ const sortedGames = games.filter(({ disabled }) => !disabled).sort(sortByDate);
                         <Image
                             src={poster}
                             alt={`${title} poster image`}
-                            width={640}
-                            height={360}
+                            width={800}
+                            height={450}
                             class="opacity-0 group-hover:opacity-50 group-focus-within:opacity-50 dark:group-hover:opacity-30 dark:group-focus-within:opacity-30 transition blur-xl -z-10 absolute top-0  w-full h-full object-cover rounded-xl"
                         />
 
                         <Image
                             src={poster}
                             alt={`${title} poster image`}
-                            width={640}
-                            height={360}
+                            width={800}
+                            height={450}
                             class="object-cover w-full h-full rounded-xl shadow-xl"
                             transition:name={`game-${route}`}
                         />
