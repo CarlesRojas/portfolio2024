@@ -16,14 +16,14 @@ const cols =
             ? 'grid-cols-2'
             : 'grid-cols-0'
         : links.length <= 2
-        ? !!qr
-            ? 'grid-cols-3'
-            : links.length === 1
-            ? 'grid-cols-1'
-            : 'grid-cols-2'
-        : !!qr
-        ? 'grid-cols-4'
-        : 'grid-cols-3';
+          ? !!qr
+              ? 'grid-cols-3'
+              : links.length === 1
+                ? 'grid-cols-1'
+                : 'grid-cols-2'
+          : !!qr
+            ? 'grid-cols-4'
+            : 'grid-cols-3';
 
 const rows = links.length > 2 ? 'grid-rows-2' : !!qr ? 'grid-rows-2' : 'grid-rows-1';
 
@@ -32,7 +32,7 @@ const maxWidth = {
     'grid-cols-3': 'max-w-[24rem]',
     'grid-cols-2': 'max-w-[16rem]',
     'grid-cols-1': 'max-w-[8rem]',
-    'grid-cols-0': 'max-w-[0rem]',
+    'grid-cols-0': 'max-w-[0rem]'
 };
 ---
 
@@ -40,7 +40,7 @@ const maxWidth = {
     <ul class={`grid ${rows} ${cols} ${maxWidth[cols]} w-full h-fit gap-2 sm:gap-4`}>
         {
             qr && (
-                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition hover:scale-[1.05] focus-within:scale-[1.05] active:scale-[1.025] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
+                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl col-span-2 row-span-2 items-center justify-center outline-none transition hover:scale-[1.02] focus-within:scale-[1.02] active:scale-[1.01] font-medium shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
                     <a
                         class="relative w-full h-full p-[8%] outline-none"
                         href={qr.url}
@@ -70,7 +70,7 @@ const maxWidth = {
 
         {
             links.map(({ url, icon }) => (
-                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl items-center justify-center outline-none transition focus-within:scale-110 hover:scale-110 active:scale-105 font-medium text-gray-600 hover:text-gray-950 focus:text-gray-950 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
+                <li class="w-full h-full flex rounded-2xl sm:rounded-3xl items-center justify-center outline-none transition focus-within:scale-[1.05] hover:scale-[1.05] active:scale-[1.025] font-medium text-gray-600 hover:text-gray-950 focus:text-gray-950 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:text-gray-200 shadow-sm border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 !bg-opacity-75 backdrop-blur-md">
                     <a
                         href={url}
                         class="relative w-full h-full p-[20%] text-2xl font-bold outline-none"

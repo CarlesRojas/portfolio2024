@@ -1,9 +1,9 @@
 import { bookly } from '@data/app/bookly';
 import { covid19 } from '@data/app/covid19';
-import { fanfastic } from '@data/app/fanfastic';
 import { godHead } from '@data/app/godHead';
+import { juegology } from '@data/app/juegology';
 import { limeLauncher } from '@data/app/limeLauncher';
-import { scoot } from '@data/app/scoot';
+import { spellbook } from '@data/app/spellbook';
 
 import { kubic } from '@data/game/kubic';
 import { letsDrive } from '@data/game/letsDrive';
@@ -36,5 +36,5 @@ export type Project = {
     disabled?: boolean;
 };
 
-export const apps: Project[] = [scoot, godHead, bookly, covid19, fanfastic, limeLauncher];
+export const apps: Project[] = [spellbook, juegology, godHead, bookly, covid19, limeLauncher];
 export const games: Project[] = [kubic, letsDrive, neoWar, portal, rushSlide, simulchess];
