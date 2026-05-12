@@ -24,7 +24,7 @@ export const gitGo: Project = {
         'Explore changed files and open side-by-side diffs for any commit or stash.'
     ],
     links: [
-        { url: 'https://marketplace.visualstudio.com/items?itemName=Pinya.git-go', icon: 'ri:vscode-fill' },
+        { url: 'https://marketplace.visualstudio.com/items?itemName=Pinya.git-go', icon: 'ri:code-box-fill' },
         { url: 'https://github.com/CarlesRojas/git-go', icon: 'ri:github-fill' }
     ],
     qr: { url: 'https://marketplace.visualstudio.com/items?itemName=Pinya.git-go', src: Qr, srcInv: QrInv },
