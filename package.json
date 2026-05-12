@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^3.6.3",
     "@astrojs/tailwind": "^5.0.0",
-    "@astrojs/vercel": "^7.8.2",
+    "@astrojs/vercel": "^10.0.6",
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
     "astro": "^4.16.19",
     "astro-google-fonts-optimizer": "^0.2.2",

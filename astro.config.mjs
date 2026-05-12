@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
 import serviceWorker from 'astrojs-service-worker';
 
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 import icon from 'astro-icon';
 
 // https://astro.build/config
