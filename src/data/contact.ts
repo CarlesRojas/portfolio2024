@@ -22,7 +22,7 @@ export const contactActions: ContactAction[] = [
         icon: 'ri:mail-line'
     },
     {
-        link: 'https://portfoliomedia.s3.eu-west-1.amazonaws.com/CarlesRojas_SoftwareDeveloper_CV.pdf',
+        link: 'https://github.com/CarlesRojas/portfolio2024/raw/main/src/asset/CarlesRojas_SoftwareDeveloper_CV.pdf',
         label: 'Download CV',
         icon: 'ri:file-download-fill',
         title: 'Download CV'
