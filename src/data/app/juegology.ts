@@ -22,11 +22,11 @@ export const juegology: Project = {
         'Juegology is your central hub for all things board games!'
     ],
     links: [
-        { url: 'https://play.google.com/store/apps/details?id=app.vercel.juegology.twa', icon: 'ri:android-fill' },
-        { url: 'https://www.microsoft.com/store/apps/9mvp6v4312bj', icon: 'ri:windows-fill' },
+        // { url: 'https://play.google.com/store/apps/details?id=app.vercel.juegology.twa', icon: 'ri:android-fill' },
+        // { url: 'https://www.microsoft.com/store/apps/9mvp6v4312bj', icon: 'ri:windows-fill' },
         { url: 'https://github.com/Juegology/juegology', icon: 'ri:github-fill' }
     ],
-    qr: { url: 'https://juegology.vercel.app', src: Qr, srcInv: QrInv },
+    // qr: { url: 'https://juegology.vercel.app', src: Qr, srcInv: QrInv },
     process:
         'Juegology is a Progressive Web App made with NextJS 14, TypeScript, React-Query, Next-Auth and Drizzle. It targets mobile, tablet and desktop devices and it is available through the Google Play Store and the Microsoft Store. You can also add it to your iPhone by scanning this QR and adding the website to your Home Screen.',
     date: '2024-05-01',

@@ -9,6 +9,6 @@ import icon from 'astro-icon';
 // https://astro.build/config
 export default defineConfig({
     integrations: [serviceWorker(), tailwind(), react(), icon({ include: { ri: ['*'] } })],
-    output: 'hybrid',
+    output: 'static',
     adapter: vercel()
 });
