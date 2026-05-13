@@ -5,15 +5,14 @@ export interface Skill {
 
 export const skills: Skill[] = [
     { label: 'NextJS' },
-    { label: 'React' },
+    { label: 'Tanstack Start' },
+    { label: 'React JS' },
+    { label: 'React Native' },
     { label: 'Typescript' },
-    { label: 'Astro' },
     { label: 'Tailwind' },
+    { label: 'Astro' },
     { label: 'Python' },
     { label: 'Django' },
     { label: 'Git' },
-    { label: 'NodeJS' },
-    { label: 'Prisma' },
-    { label: 'AWS' },
-    { label: 'Kubernetes' },
+    { label: 'Figma' }
 ];

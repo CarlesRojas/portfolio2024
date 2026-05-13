@@ -19,9 +19,9 @@ export const gitGo: Project = {
         'A visual git graph explorer for VS Code. Browse branches, stashes, and commits with an interactive graph.',
     description: [
         'Git Go is a VS Code extension that visualizes and manages your git history with an interactive commit graph.',
-        'View branches, merges, stashes, and uncommitted changes in real time.',
-        'Manage branches, stashes, tags, and common git actions directly from the graph.',
-        'Explore changed files and open side-by-side diffs for any commit or stash.'
+        '- View branches, merges, stashes, and uncommitted changes in real time.',
+        '- Manage branches, stashes, tags, and common git actions directly from the graph.',
+        '- Explore changed files and open side-by-side diffs for any commit or stash.'
     ],
     links: [
         { url: 'https://marketplace.visualstudio.com/items?itemName=Pinya.git-go', icon: 'ri:code-box-fill' },
